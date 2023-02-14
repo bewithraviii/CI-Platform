@@ -34,11 +34,6 @@
 .imgtxt1 {
     font-family: NotoSans;
     font-size: 43px;
-    position: absolute;
-    top: 594px;
-    left: 159px;
-    width: 592px;
-    height: 109px;
     text-align: left;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -48,11 +43,6 @@
 .imgtxt2 {
     font-family: NotoSans-Light;
     font-size: 16px;
-    position: absolute;
-    top: 720px;
-    left: 159px;
-    width: 849px;
-    height: 120px;
     text-align: left;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -126,7 +116,7 @@ a:link {
 }
 
 
-@media only screen and (max-width: 1705px) {
+@media only screen and (max-width: 1205px) {
     .imgtxt1 {
         display: none;
     }

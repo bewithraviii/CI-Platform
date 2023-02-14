@@ -8,41 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CI_Platform
 build_property.RootNamespace = CI_Platform
-build_property.ProjectDir = C:\Users\tatva\Desktop\Backup CI\MVC\CI Platform\CI-Platform\
+build_property.ProjectDir = C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\CI-Platform\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\tatva\Desktop\Backup CI\MVC\CI Platform\CI-Platform
+build_property.MSBuildProjectDirectory = C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\CI-Platform
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/Home/Index.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/Home/LoginPage.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/Home/LoginPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/Home/Privacy.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/Shared/Error.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/_ViewImports.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/LoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/RegistrationPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RyYXRpb25QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/_ViewStart.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tatva/Desktop/Backup CI/MVC/CI Platform/CI-Platform/Views/Shared/_Layout.cshtml]
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-z4picm1zyd

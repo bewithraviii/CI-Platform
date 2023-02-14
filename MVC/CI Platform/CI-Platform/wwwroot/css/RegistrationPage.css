@@ -3,15 +3,18 @@
     height: 100%;
 }
 
-.imgdesign {
+
+.row
+{
+    height: 100vh;
+}
+
+.img
+{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    
 }
-
-.row {
-    height: 100vh;
-}
-
 
 #growtree {
     width: 100%;
@@ -33,14 +36,10 @@
 
 
 
+
 .imgtxt1 {
     font-family: NotoSans;
     font-size: 43px;
-    position: absolute;
-    top: 594px;
-    left: 159px;
-    width: 592px;
-    height: 109px;
     text-align: left;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -50,11 +49,6 @@
 .imgtxt2 {
     font-family: NotoSans-Light;
     font-size: 16px;
-    position: absolute;
-    top: 720px;
-    left: 159px;
-    width: 849px;
-    height: 120px;
     text-align: left;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -63,10 +57,12 @@
 
 .lgdetail {
     width: 100%;
+    height: 100%;
     opacity: 1;
 }
 
 .lgin {
+    height: 100%;
     width: 402px;
 }
 
@@ -117,7 +113,6 @@ a:link {
 #footer {
     font-family: NotoSans-Light;
     font-size: 14px;
-    margin-top: 5em;
     letter-spacing: 0px;
     display: flex;
     align-items: center;
@@ -127,7 +122,8 @@ a:link {
 }
 
 
-@media only screen and (max-width: 1290px) {
+@media only screen and (max-width: 1250px) 
+{
     .imgtxt1 {
         display: none;
     }
@@ -138,7 +134,8 @@ a:link {
 }
 
 
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 765px) 
+{
     .lgin {
         margin-top: 50px;
     }
@@ -149,7 +146,8 @@ a:link {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 410px) 
+{
     .lgin {
         width: 100%;
     }
