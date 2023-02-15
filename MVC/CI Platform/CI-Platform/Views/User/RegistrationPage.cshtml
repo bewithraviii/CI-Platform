@@ -60,46 +60,48 @@
   </button>
 </div>
 </div>
-
-
-
-
-
             </div>
+
+
+
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="display: flex;align-items: center;justify-content: center;">
-              <div class="lgin">
+              <div class="lgin" style="display: flex;align-items: center;justify-content: center;">
                 <div class="lgdetail">
                   <form>
-                    <div class="mb-3">
+                    <div class="col-md-12">
                         <label for="exampleInputEmail1" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ravi">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-12">
                         <label for="exampleInputEmail1" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Patel">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-12">
                         <label for="exampleInputEmail1" class="form-label">Phone Number</label>
                         <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9865327411">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-12">
                       <label for="exampleInputEmail1" class="form-label">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ravipatel@gmail.com">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-12">
                       <label for="exampleInputPassword1" class="form-label">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="**********">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-12">
                         <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="**********">
                     </div>
                     <button type="button" class="btn btn-outline-secondary" id="lgbtn">Login</button>
+                    </form>
+                   
+                    <div class="footertxt">
                     <p id="forgetpassword"><a id="forpas" asp-controller="User" asp-action="ForgotPassword">Lost Your Password?</a></p>
                     <p id="creatacc">Already Registered? <a id="crtac" asp-controller="User" asp-action="LoginPage">Login now</a></p>
                     <p id="footer">Privacy Policy</p>
-                  </form>
-                </div>                
+                    </div> 
+                    
+                    </div> 
               </div>
             </div>
         </div>
