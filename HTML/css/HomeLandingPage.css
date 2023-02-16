@@ -1,0 +1,91 @@
+
+
+#navbarDropdown2
+{
+    color: #333333;
+}
+
+.userimg
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+
+}
+
+.border
+{
+    height: 75px;
+}
+
+.d-flex
+{
+    height: 100%;
+}
+
+.filterpart1
+{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.search
+{
+    padding: 1.5rem;
+}
+
+.filterpart2
+{
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+#btnGroupDrop1
+{
+    border: 1px solid #dee2e6;
+    color: black;
+    border-radius: 0%;
+    width: 200px;
+    height: 100%;
+    justify-content: left;
+    background-color: transparent;
+}
+
+
+
+@media only screen and (max-width: 767px)
+{
+
+.border
+{
+    height: auto;
+}
+
+.filterpart1
+{
+    padding: 0.3rem;
+}    
+
+#search
+{
+    border: 1px solid gainsboro !important;
+}
+
+.filterpart2
+{
+    padding: 0.3rem;
+    justify-content: center;
+}
+}
+
+@media only screen and (max-width: 375px)
+{
+    #btnGroupDrop1
+{
+    padding: 0%;
+}
+}
