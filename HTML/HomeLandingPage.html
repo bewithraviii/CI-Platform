@@ -6,178 +6,512 @@
     <link rel="stylesheet" href="css/HomeLandingPage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home-Page</title>
   </head>
   <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="story&policy">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Stories</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
-                      <div class="policyandicon d-flex">
-                        <div>
-                          Policy
-                        </div>
-                          <i class="bi bi-chevron-down" style="margin-left: 7px;"></i>
-                      </div>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                </div>
-              </div>
-              <hr class="dropdown-divider">
-                <div class="d-flex">
-                  <div class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
-                      <img class="userimg" src="images/user-img-large.png">&nbsp;
-                        Evan Donohue
-                        <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Add Profile</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Volunteering Timesheet</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Logout</a></li>
-                    </ul>
-                  </div>
-                </div>              
-            </div>
-          </nav>
-    </header>
-
     
-    <div class="border" style=" border-bottom: 2px;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: 0%;height: 100%;">
-        <div class="container-fluid" style="height: 100%;">
-            <div class="filter" style="width: 100%;height: 100%;">
-                <div class="row" style="height: 100%;">
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                      <div class="filterpart1">
-                        <div class="partsearch">
-                          <form class="d-flex">
-                          <button class="btn" type="submit"><img src="images/search.png"></button>&nbsp;
-                          <input id="search" class="form-control me-2" type="search" placeholder="Search mission..." aria-label="Search" style="border: none;">
-                          </form>
-                        </div>  
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="story&policy">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Stories</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
+                    <div class="policyandicon d-flex">
+                      <div>
+                        Policy
                       </div>
-                  </div>
-                  <div class="col-lg-5 col-md-5 col-sm-12">
-                      <div class="filterpart2" style="width: 100%;">
-                          <div class="d-flex" style="width: 100%;">
-                            <div class="classdropdown d-flex" style="width:100%;height:100%">
-                              <div class="nav-item dropdown">
-                                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Country
-                                  <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                  <li><a class="dropdown-item" href="#">India</a></li>
-                                  <li><a class="dropdown-item" href="#">Canada</a></li>
-                                  <li><a class="dropdown-item" href="#">Usa</a></li>
-                                  <li><a class="dropdown-item" href="#">Uk</a></li>
-                                  <li><a class="dropdown-item" href="#">Australia</a></li>
-                                </ul>
-                              </div>
-                              <div class="nav-item dropdown">
-                                <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                 City
-                                 <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                  <li><a class="dropdown-item" href="#">Dropdown city</a></li>
-                                  <li><a class="dropdown-item" href="#">Dropdown city</a></li>
-                                </ul>
-                              </div> 
-                              <div class="nav-item dropdown">
-                                <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Theme
-                                  <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                  <li><a class="dropdown-item" href="#">Dark</a></li>
-                                  <li><a class="dropdown-item" href="#">Light</a></li>
-                                </ul>
-                              </div>
-                              <div class="nav-item dropdown">
-                                <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Skills
-                                  <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                  <li><a class="dropdown-item" href="#">Dropdown Skills</a></li>
-                                  <li><a class="dropdown-item" href="#">Dropdown Skills</a></li>
-                                </ul>
-                              </div>
+                        <i class="bi bi-chevron-down" style="margin-left: 7px;"></i>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <hr class="dropdown-divider">
+              <div class="d-flex">
+                <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
+                    <img class="userimg" src="images/user-img-large.png">&nbsp;
+                      Evan Donohue
+                      <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Add Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Volunteering Timesheet</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>              
+          </div>
+        </nav>
+  </header>
+
+  
+  <div class="border" style=" border-bottom: 2px;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: 0%;height: 100%;">
+      <div class="container-fluid" style="height: 100%;">
+          <div class="filter" style="width: 100%;height: 100%;">
+              <div class="row" style="height: 100%;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="filterpart1">
+                      <div class="partsearch">
+                        <form class="d-flex">
+                        <button class="btn" type="submit"><img src="../images/search.png"></button>&nbsp;
+                        <input id="search" class="form-control me-2" type="search" placeholder="Search mission..." aria-label="Search" style="border: none;">
+                        </form>
+                      </div>  
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="filterpart2" style="width: 100%;">
+                        <div class="d-flex" style="width: 100%;">
+                          <div class="classdropdown d-flex" style="width:100%;height:100%">
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                                <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">India</a></li>
+                                <li><a class="dropdown-item" href="#">Canada</a></li>
+                                <li><a class="dropdown-item" href="#">Usa</a></li>
+                                <li><a class="dropdown-item" href="#">Uk</a></li>
+                                <li><a class="dropdown-item" href="#">Australia</a></li>
+                              </ul>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                               City
+                               <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Dropdown city</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown city</a></li>
+                              </ul>
+                            </div> 
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Theme
+                                <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Dark</a></li>
+                                <li><a class="dropdown-item" href="#">Light</a></li>
+                              </ul>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Skills
+                                <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Dropdown Skills</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown Skills</a></li>
+                              </ul>
                             </div>
                           </div>
-                      </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-0 col-sm-0"></div>
+              </div>
+          </div>
+      </div>
+  </nav>
+  </div>
+
+  
+  <div class="main">
+  
+  <div class="filters" style="height: 15vh;">
+
+  </div>
+
+  
+  <div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="d-flex bd-highlight mb-3" style="justify-content: center; align-items: center;" >
+        <div class="total-mission me-auto p-2 bd-highlight" style="font-family: NotoSans-Light; font-size: 24px; color: #414141;"> 
+          Explore <b>72 missions</b>
+        </div>
+        <div class="options p-2 bd-highlight">
+            <div class="select">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Sort By</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+        </div>  
+        <div class="view p-2 bd-highlight">
+          <div id="btnContainer d-flex">
+            <button class="btn" id="grid" style="border-radius: 50%;" onclick="gridView()"><img src="images/grid.png"></button>
+            <button class="btn" id="list" style="border-radius: 50%;" onclick="listView()"><img src="images/list.png"></button>
+          </div>
+        </div>                          
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="container">
+        <div id="missioncards" class="row view-group">
+
+          <div class="item col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-img-top">
+            <img src="../images/Grow-Trees-On-the-path-to-environment-sustainability.png" alt="...">
+            </div>  
+              <div class="card-body">
+                <h5 class="card-title">Grow Trees - On the path to environment sustainability</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                <div class="d-flex" style="height: auto; justify-content: space-between;">
+                  Tree Canada
+                  <div class="rating fs-5">
+                    <span class="star" data-value="1"><i
+                            class="bi bi-star"></i></span>
+                    <span class="star" data-value="2"><i
+                            class="bi bi-star"></i></span>
+                    <span class="star" data-value="3"><i
+                            class="bi bi-star"></i></span>
+                    <span class="star" data-value="4"><i
+                            class="bi bi-star"></i></span>
+                    <span class="star" data-value="5"><i
+                            class="bi bi-star"></i></span>
                   </div>
-                  <div class="col-lg-1 col-md-0 col-sm-0"></div>
+                  </div>
+                  <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                   <div class="d-flex justify-content-center">
+                   <div class="timeline">From 10/01/2019 until 25/02/2019</div> 
+                   </div>
+                   <div class="seat-date d-flex">  
+                    <div class="seat d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                      <div class="col-3">
+                        <img src="images/Seats-left.png">
+                      </div>
+                      <div class="col-9">
+                        <div class="num">10</div>
+                        <div class="txt">Seats Left</div>
+                      </div>
+                    </div>
+                    <div class="deadline d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                      <div class="col-3">
+                        <img src="images/deadline.png">
+                      </div>
+                      <div class="col-9">
+                        <div class="num">09/01/2019</div>
+                        <div class="txt">Deadline</div>
+                      </div>
+                    </div>  
+                  </div>
+                  </div>
+              </div>
+              <div class="card-footer d-flex">
+                <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                  Apply
+                  <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                </button>
+              </div>
+          </div>
+          </div>
+          <div class="item col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+              <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" alt="..." style="width: 100%;">
+              </div>  
+                <div class="card-body">
+                  <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                  <div class="d-flex" style="height: auto; justify-content: space-between;">
+                    Australian Paradise
+                    <div class="rating fs-5">
+                      <span class="star" data-value="1"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="2"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="3"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="4"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="5"><i
+                              class="bi bi-star"></i></span>
+                    </div>
+                    </div>
+                    <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                      <div class="d-flex justify-content-center">
+                      <div class="timeline">From 10/01/2019 until 25/02/2019</div> 
+                      </div>
+                      <div class="seat-date d-flex">  
+                       <div class="seat d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                         <div class="col-3">
+                           <img src="images/Already-volunteered.png">
+                         </div>
+                         <div class="col-9">
+                           <div class="num">250</div>
+                           <div class="txt">Already volunteered</div>
+                         </div>
+                       </div>
+                       <div class="deadline d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                         <div class="col-3">
+                           <img src="images/deadline.png">
+                         </div>
+                         <div class="col-9">
+                           <div class="num">09/01/2019</div>
+                           <div class="txt">Deadline</div>
+                         </div>
+                       </div>  
+                     </div>
+                     </div>
+                </div>
+                <div class="card-footer d-flex">
+                  <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                    Apply
+                    <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                  </button>
                 </div>
             </div>
-        </div>
-    </nav>
-    </div>
-
-    
-    <div class="main">
-    
-    <div class="filters" style="height: 15vh;">
-
-    </div>
-
-    
-    <div class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="d-flex bd-highlight mb-3" style="justify-content: center; align-items: center;" >
-          <div class="total-mission me-auto p-2 bd-highlight" style="font-family: NotoSans-Light; font-size: 24px; color: #414141;"> 
-            Explore <b>72 missions</b>
           </div>
-          <div class="options p-2 bd-highlight">
-              <div class="select">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Sort By</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-          </div>  
-          <div class="view p-2 bd-highlight">
-            <div id="btnContainer d-flex">
-              <button class="btn active" style="border-radius: 50%;" onclick="gridView()"><i class="bi bi-grid"></i></i></button>
-              <button class="btn" style="border-radius: 50%;" onclick="listView()"><i class="bi bi-list"></i></i></button> 
+          <div class="item col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+              <img src="images/Nourish-the-Children-in--African-country.png" alt="...">
+              </div>  
+                <div class="card-body">
+                  <h5 class="card-title">Nourish the Children in African country</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                  <div class="d-flex" style="height: auto; justify-content: space-between;">
+                    The Hunger
+                    <div class="rating fs-5">
+                      <span class="star" data-value="1"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="2"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="3"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="4"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="5"><i
+                              class="bi bi-star"></i></span>
+                    </div>
+                    </div>
+                    <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                      <div class="d-flex justify-content-center">
+                      <div class="timeline">Ongoing Opportunity</div> 
+                      </div>
+                      <div class="seat-date d-flex">  
+                       <div class="seat d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                         <div class="col-3">
+                           <img src="images/Seats-left.png">
+                         </div>
+                         <div class="col-9">
+                           <div class="num">10</div>
+                           <div class="txt">Seats Left</div>
+                         </div>
+                       </div>
+                       <div class="deadline d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                         <div class="col-3">
+                           <img src="images/deadline.png">
+                         </div>
+                         <div class="col-9">
+                           <div class="num">09/01/2019</div>
+                           <div class="txt">Deadline</div>
+                         </div>
+                       </div>  
+                     </div>
+                     </div>
+                </div>
+                <div class="card-footer d-flex">
+                  <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                    Apply
+                    <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                  </button>
+                </div>
             </div>
-          </div>                          
-        </div>
+          </div>
 
-        </div>
-
-      <div class="row">
-        <div class="Missions">
-          <div class="row">
-            <div class="card-group">
+          <div class="item col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+              <img src="images/CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png" alt="...">
+              </div>  
+                <div class="card-body">
+                  <h5 class="card-title">CSR initiative stands for Coffee and Farmer Equity</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                  <div class="d-flex" style="height: auto; justify-content: space-between;">
+                    CSE Network
+                    <div class="rating fs-5">
+                      <span class="star" data-value="1"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="2"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="3"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="4"><i
+                              class="bi bi-star"></i></span>
+                      <span class="star" data-value="5"><i
+                              class="bi bi-star"></i></span>
+                    </div>
+                    </div>
+                    <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                     <div class="d-flex justify-content-center">
+                     <div class="timeline">Ongoing Opportunity</div> 
+                     </div>
+                     <div class="seat-date d-flex">  
+                      <div class="seat d-flex" style="width: 100%; justify-content: center; align-items: center;">
+                        <div class="col-2">
+                          <img src="images/Already-volunteered.png">
+                        </div>
+                        <div class="col-10">
+                          <div class="num">250</div>
+                          <div class="txt">Already volunteered</div>
+                        </div>
+                      </div>  
+                    </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex">
+                  <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                    Apply
+                    <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                  </button>
+                </div>
+            </div>
+          </div>
+          <div class="item col-12 col-md-6 col-lg-4">
               <div class="card">
-                <img src="images/Grow-Trees-On-the-path-to-environment-sustainability.png" class="card-img-top" alt="...">
+                <div class="card-img-top">
+                <img src="images/Animal-welfare-&-save-birds-campaign.png" alt="...">
+                </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Animal welfare & save birds campaign</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <div class="d-flex" style="height: auto; justify-content: space-between;">
+                      JR Foundation
+                      <div class="rating fs-5">
+                        <span class="star" data-value="1"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="2"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="3"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="4"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="5"><i
+                                class="bi bi-star"></i></span>
+                      </div>
+                      </div>
+                      <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                        <div class="d-flex justify-content-center">
+                        <div class="timeline">Plant 10,000 Trees</div> 
+                        </div>
+                        <div class="seat-date d-flex">  
+                         <div class="seat d-flex" style="width: 40%; justify-content: center; align-items: center;">
+                           <div class="col-3">
+                             <img src="images/Seats-left.png">
+                           </div>
+                           <div class="col-9">
+                             <div class="num">10</div>
+                             <div class="txt">Seats Left</div>
+                           </div>
+                         </div>
+                         <div class="deadline d-flex" style="width: 60%; justify-content: center; align-items: center;">
+                           <div class="col-2">
+                             <img src="images/achieved.png">
+                           </div>
+                           <div class="col-10">
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="txt">8000 achieved</div>
+                           </div>
+                         </div>  
+                       </div>
+                       </div>
+                  </div>
+                  <div class="card-footer d-flex">
+                    <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                      Apply
+                      <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                    </button>
+                  </div>
+              </div>
+          </div>
+          <div class="item col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-img-top">
+                <img src="images/Plantation-and-Afforestation-programme.png" alt="...">
+                </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Plantation and Afforestation programme</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <div class="d-flex" style="height: auto; justify-content: space-between;">
+                      Amaze Doctors
+                      <div class="rating fs-5">
+                        <span class="star" data-value="1"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="2"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="3"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="4"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="5"><i
+                                class="bi bi-star"></i></span>
+                      </div>
+                      </div>
+                      <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                        <div class="d-flex justify-content-center">
+                        <div class="timeline">Plant 10,000 Trees</div> 
+                        </div>
+                        <div class="seat-date d-flex">
+                         <div class="deadline d-flex" style="width: 100%; justify-content: center; align-items: center;">
+                           <div class="col-2" style="padding-left: 15px;">
+                             <img src="images/achieved.png">
+                           </div>
+                           <div class="col-10">
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="txt">8000 achieved</div>
+                           </div>
+                         </div>  
+                       </div>
+                       </div>
+                  </div>
+                  <div class="card-footer d-flex">
+                    <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                      Apply
+                      <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                    </button>
+                  </div>
+              </div>
+          </div>
+
+          <div class="item col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-img-top">
+              <img src="../images/Grow-Trees-On-the-path-to-environment-sustainability.png" alt="...">
+              </div>  
                 <div class="card-body">
                   <h5 class="card-title">Grow Trees - On the path to environment sustainability</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ...</p>
                   <div class="d-flex" style="height: auto; justify-content: space-between;">
                     Tree Canada
                     <div class="rating fs-5">
@@ -196,112 +530,207 @@
                 </div>
                 <div class="card-footer d-flex">
                   <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
-                    Apply
+                    View details
                     <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
                   </button>
                 </div>
-              </div>
-              <div class="card">
-                <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                    <div class="d-flex" style="height: auto; justify-content: space-between;">
-                    Australian Paradise
-                    <div class="rating fs-5">
-                      <span class="star" data-value="1"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="2"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="3"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="4"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="5"><i
-                              class="bi bi-star"></i></span>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-footer d-flex">
-                  <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.2">
-                    Apply
-                    <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
-                  </button>
-                </div>
-              </div>
-              <div class="card">
-                <img src="images/Nourish-the-Children-in--African-country.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h2 class="card-title">Nourish the Children in African country</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                  <p class="card-moto container-fluid" style="height: auto;">
-                    <div class="d-flex" style="height: auto; justify-content: space-between;">
-                    The Hunger
-                    <div class="rating fs-5">
-                      <span class="star" data-value="1"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="2"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="3"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="4"><i
-                              class="bi bi-star"></i></span>
-                      <span class="star" data-value="5"><i
-                              class="bi bi-star"></i></span>
-                    </div>
-                    </div>
-                </div>
-                <div class="card-footer d-flex">
-                  <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.3">
-                    Apply
-                    <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
-          
-          
+          <div class="item col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-img-top">
+                <img src="images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png" alt="...">
+                </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Education Supplies for Every Pair of Shoes Sold</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <div class="d-flex" style="height: auto; justify-content: space-between;">
+                      Tree Canada
+                      <div class="rating fs-5">
+                        <span class="star" data-value="1"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="2"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="3"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="4"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="5"><i
+                                class="bi bi-star"></i></span>
+                      </div>
+                      </div>
+                      <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                        <div class="d-flex justify-content-center">
+                        <div class="timeline">From 10/01/2019 until 25/02/2019</div> 
+                        </div>
+                        <div class="seat-date d-flex">  
+                         <div class="seat d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                           <div class="col-3">
+                             <img src="images/Already-volunteered.png">
+                           </div>
+                           <div class="col-9">
+                             <div class="num">250</div>
+                             <div class="txt">Already volunteered</div>
+                           </div>
+                         </div>
+                         <div class="deadline d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                           <div class="col-3">
+                             <img src="images/deadline.png">
+                           </div>
+                           <div class="col-9">
+                             <div class="num">09/01/2019</div>
+                             <div class="txt">Deadline</div>
+                           </div>
+                         </div>  
+                       </div>
+                       </div>
+                  </div>
+                  <div class="card-footer d-flex">
+                    <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                      Apply
+                      <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                    </button>
+                  </div>
+              </div>
           </div>
+          <div class="item col-12 col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-img-top">
+                <img src="images/Nourish-the-Children-in--African-country.png" alt="...">
+                </div>  
+                  <div class="card-body">
+                    <h5 class="card-title">Nourish the Children in African country</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                    <div class="d-flex" style="height: auto; justify-content: space-between;">
+                      Junior Charity
+                      <div class="rating fs-5">
+                        <span class="star" data-value="1"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="2"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="3"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="4"><i
+                                class="bi bi-star"></i></span>
+                        <span class="star" data-value="5"><i
+                                class="bi bi-star"></i></span>
+                      </div>
+                      </div>
+                      <div class="card-seatdate" style="border-top: 1px solid rgba(0,0,0,.125);margin-top: 2rem;"> 
+                        <div class="d-flex justify-content-center">
+                        <div class="timeline">Ongoing Opportunity</div> 
+                        </div>
+                        <div class="seat-date d-flex">  
+                         <div class="seat d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                           <div class="col-3">
+                             <img src="images/Seats-left.png">
+                           </div>
+                           <div class="col-9">
+                             <div class="num">10</div>
+                             <div class="txt">Seats Left</div>
+                           </div>
+                         </div>
+                         <div class="deadline d-flex" style="width: 50%; justify-content: center; align-items: center;">
+                           <div class="col-3">
+                             <img src="images/deadline.png">
+                           </div>
+                           <div class="col-9">
+                             <div class="num">09/01/2019</div>
+                             <div class="txt">Deadline</div>
+                           </div>
+                         </div>  
+                       </div>
+                       </div>
+                  </div>
+                  <div class="card-footer d-flex">
+                    <button class="lgbtn" type="button" class="btn btn-outline-secondary"  id="lgbtn1.1">
+                      Apply
+                      <i class="bi bi-arrow-right" style="margin-left: 5px;"></i> 
+                    </button>
+                  </div>
+              </div>
+          </div>
+
         </div>
       </div>
+    </div>
 
+    <div class="row">
+      <div class="d-flex justify-content-center">
+        <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item" style="color: #F88634;">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+        </nav>
+      </div>
+    </div>
   </div>
   </div>
 
+  </div>
 
-    <script>
-      // Get the elements with class="card"
-      var elements = document.getElementsByClassName("card");
-      
-      // Declare a loop variable
-      var i;
-      
-      // List View
-      function listView() {
-        for (i = 0; i < elements.length; i++) {
-          elements[i].style.width = "100%";
-        }
-      }
-      
-      // Grid View
-      function gridView() {
-        for (i = 0; i < elements.length; i++) {
-          elements[i].style.width = "33.33%";
-        }
-      }
-      
-      /* Optional: Add active class to the current button (highlight it) */
-      var container = document.getElementById("btnContainer");
-      var btn = container.getElementsByClassName("btn");
-      for (var i = 0; i < btn.length; i++) {
-        btn[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace("active", "");
-          this.className += " active";
-        });
-      }
-      </script>
+  <div class="footer">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+        <div class="footertxt">
+          Privacy Policy
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  
+  var elements = document.getElementsByClassName("item");
+  var i;
+
+  function listView() 
+  {
+  for (i = 0; i < elements.length; i++) 
+  {
+    elements[i].style.width = "100%";
+  }
+  }
+
+  function gridView() 
+  {
+  for (i = 0; i < elements.length; i++) 
+  {
+    elements[i].style.width = "33.3333%";
+  }
+  }
+
+  var container = document.getElementById("btnContainer");
+  var btns = container.getElementById("btn");
+  for (var i = 0; i < btns.length; i++) 
+  {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+  }
+
+
+  
+
+  </script>
 
 
 

@@ -80,26 +80,67 @@
 /* Mission list and grid css */
 /* FOR CLEAR REPRESENTATION */
   
+* {
+  box-sizing: border-box;
+}
 
 
-  /* Create two equal columns that floats next to each other */
-  .column 
+
+
+/* .item::after .card
+{
+  float: none;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 30px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  border: 0;
+}
+.item::after .card .card-img-top
+{
+  width: 30%;
+  float: left;
+}
+.item::after .card.card-img-top
+{
+  width: 60%;
+  float: left;
+}
+.item::after .card.card-footer
+{
+  width: 10%;
+  float: left;
+}  
+
+
+
+.row.item:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+} */
+ 
+  /* Style the buttons */
+  .view
   {
-    float: left;
-    width: 50%;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .btncontainer
+  {
+    justify-content: center;
+    align-items: center;
   }
   
-  /* Clear floats after the columns */
-  .row:after 
-  {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  /* Style the buttons */
   .btn 
   {
+    height: 100%;
     border: none;
     outline: none;
     padding: 12px 16px;
@@ -132,9 +173,19 @@
   color: #F88634;
 }
 
-.card-img-top
+.card 
 {
-    height: 220px;
+    float: left;
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 25px #0000000F;
+    border-radius: 3px;
+}
+
+.card-img-top img
+{
+    width: 100%;
 }
 
 .card-group
@@ -172,10 +223,47 @@
     background-color: transparent !important;
 }
 
+.timeline
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    width: fit-content;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 20px;
+    translate: 0 -50%;
+    background-color: white;
+    padding: 5px;
+}
+.num
+{
+    font-size: 18px;
+}
+.txt
+{
+    font-size: 14px;
+    color: #757575;
+}
+ 
+.page-item a
+{
+    color: #757575;
+}
 
-
-
-
+.footer
+{
+    border-top: 1px solid #dee2e6;
+}
+.footertxt
+{
+    height: 10vh;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    font-family: NotoSans-Light;
+    font-size: 14px;
+}
 
 
 

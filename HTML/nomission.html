@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/nomission.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>No mission</title>
+  </head>
+
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="story&policy">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Stories</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
+                    <div class="policyandicon d-flex">
+                      <div>
+                        Policy
+                      </div>
+                        <i class="bi bi-chevron-down" style="margin-left: 7px;"></i>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              </div>
+            </div>
+            <hr class="dropdown-divider">
+              <div class="d-flex">
+                <div class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
+                    <img class="userimg" src="images/user-img-large.png">&nbsp;
+                      Evan Donohue
+                      <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Add Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Volunteering Timesheet</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>              
+          </div>
+        </nav>
+  </header>
+
+  
+  <div class="border" style=" border-bottom: 2px;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="padding: 0%;height: 100%;">
+      <div class="container-fluid" style="height: 100%;">
+          <div class="filter" style="width: 100%;height: 100%;">
+              <div class="row" style="height: 100%;">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="filterpart1">
+                      <div class="partsearch">
+                        <form class="d-flex">
+                        <button class="btn" type="submit"><img src="../images/search.png"></button>&nbsp;
+                        <input id="search" class="form-control me-2" type="search" placeholder="Search mission..." aria-label="Search" style="border: none;">
+                        </form>
+                      </div>  
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="filterpart2" style="width: 100%;">
+                        <div class="d-flex" style="width: 100%;">
+                          <div class="classdropdown d-flex" style="width:100%;height:100%">
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Country
+                                <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">India</a></li>
+                                <li><a class="dropdown-item" href="#">Canada</a></li>
+                                <li><a class="dropdown-item" href="#">Usa</a></li>
+                                <li><a class="dropdown-item" href="#">Uk</a></li>
+                                <li><a class="dropdown-item" href="#">Australia</a></li>
+                              </ul>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                               City
+                               <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Dropdown city</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown city</a></li>
+                              </ul>
+                            </div> 
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Theme
+                                <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Dark</a></li>
+                                <li><a class="dropdown-item" href="#">Light</a></li>
+                              </ul>
+                            </div>
+                            <div class="nav-item dropdown">
+                              <button id="btnGroupDrop1" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                Skills
+                                <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
+                              </button>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <li><a class="dropdown-item" href="#">Dropdown Skills</a></li>
+                                <li><a class="dropdown-item" href="#">Dropdown Skills</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-0 col-sm-0"></div>
+              </div>
+          </div>
+      </div>
+  </nav>
+  </div>
+
+    <div class="no-mission">
+        <div class="container-fluid">
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="content">
+                    <div class="text">
+                        <h4>No mission found</h4>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-outline-secondary" id="lgbtn">
+                          <div class="d-flex">
+                            Submit new mission
+                            <i class="bi bi-arrow-right" id="arrow"></i>
+                          </div>  
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
