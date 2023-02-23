@@ -43,12 +43,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpblBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/PlatformLandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQbGF0Zm9ybUxhbmRpbmdQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/RegistrationPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RyYXRpb25QYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/User/VolunteeringMissionPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWb2x1bnRlZXJpbmdNaXNzaW9uUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tatva/Desktop/CI-Platform/MVC/CI Platform/CI-Platform/Views/_ViewImports.cshtml]

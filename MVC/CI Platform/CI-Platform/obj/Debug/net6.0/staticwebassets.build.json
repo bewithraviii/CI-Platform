@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aTBByNo4jphUe/WZwcDak5viC7vPlk6yP+k94c3amVA=",
+  "Hash": "zmk6AUvJLpKwAzeUyV7lbAkfS7l1Zt1DZa0flA7QrWI=",
   "Source": "CI-Platform",
   "BasePath": "_content/CI-Platform",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\css\\Login-Page.css"
     },
     {
+      "Identity": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\CI-Platform\\wwwroot\\css\\PlatformLandingPage.css",
+      "SourceId": "CI-Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\CI-Platform\\wwwroot\\",
+      "BasePath": "_content/CI-Platform",
+      "RelativePath": "css/PlatformLandingPage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PlatformLandingPage.css"
+    },
+    {
       "Identity": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\CI-Platform\\wwwroot\\css\\RegistrationPage.css",
       "SourceId": "CI-Platform",
       "SourceType": "Discovered",
@@ -134,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\CI-Platform\\wwwroot\\css\\VolunteeringMissionPage.css",
+      "SourceId": "CI-Platform",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\CI-Platform\\wwwroot\\",
+      "BasePath": "_content/CI-Platform",
+      "RelativePath": "css/VolunteeringMissionPage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\VolunteeringMissionPage.css"
     },
     {
       "Identity": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\CI-Platform\\wwwroot\\favicon.ico",

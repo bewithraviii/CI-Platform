@@ -23,5 +23,14 @@ namespace CI_Platform.Controllers
         {
             return View();
         }
+
+        public IActionResult PlatformLandingPage()
+        {
+            return View();
+        }
+        public IActionResult VolunteeringMissionPage()
+        {
+            return View();
+        }
     }
 }
