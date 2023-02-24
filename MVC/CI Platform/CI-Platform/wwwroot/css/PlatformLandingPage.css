@@ -311,7 +311,13 @@
     border-color: #F88634 !important;
 }
 
-.footer {
+.footer 
+{
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
     border-top: 1px solid #dee2e6;
 }
 
