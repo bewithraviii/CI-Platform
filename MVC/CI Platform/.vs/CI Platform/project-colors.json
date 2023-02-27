@@ -15,7 +15,17 @@
       "ProjectGuid": "daa91a7b-478b-4cf9-9644-9df4f0c03d4a",
       "DisplayName": "BulkyBook",
       "ColorIndex": 1
+    },
+    "3bbe0943-828c-4503-a29c-0bcf22b5125e": {
+      "ProjectGuid": "3bbe0943-828c-4503-a29c-0bcf22b5125e",
+      "DisplayName": "MainProjectsEntity",
+      "ColorIndex": 2
+    },
+    "46714034-689f-4f8d-84b8-30981ed7d2e9": {
+      "ProjectGuid": "46714034-689f-4f8d-84b8-30981ed7d2e9",
+      "DisplayName": "MainProjectRepository",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }

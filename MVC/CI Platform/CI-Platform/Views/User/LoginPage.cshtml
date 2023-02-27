@@ -2,6 +2,7 @@
 @{
     Layout = null;
 }
+@model MainProjectsEntity.Models.User
 
 <!doctype html>
 <html lang="en">
@@ -68,16 +69,18 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="display: flex;align-items: center;justify-content: center;">
               <div class="lgin">
                 <div class="lgdetail">
-                  <form>
+                  <form method="post">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ravipatel@gmail.com">
+                      <label asp-for="Email" for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input asp-for="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ravipatel@gmail.com">
+                      <span asp-validation-for="Email" class="text-danger"></span>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="**********">
+                      <label asp-for="Password" for="exampleInputPassword1" class="form-label">Password</label>
+                      <input asp-for="Password" class="form-control" id="exampleInputPassword1" placeholder="**********">
+                      <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
-                    <button type="button" class="btn btn-outline-secondary" id="lgbtn"><a asp-controller="User" asp-action="PlatformLandingPage">Login</a></button>
+                    <button type="submit" class="btn btn-outline-secondary" id="lgbtn">Login</button>
                     <p id="forgetpassword"><a id="forpas" asp-controller="User" asp-action="ForgotPassword">Lost Your Password?</a></p>
                     <p id="creatacc">Don’t have an account? <a id="crtac" asp-controller="User" asp-action="RegistrationPage">Create an account</a></p>
                     <p id="footer">Privacy Policy</p>

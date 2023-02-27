@@ -1,0 +1,14 @@
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\bin\Debug\net6.0\MainProjectsEntity.deps.json
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\bin\Debug\net6.0\MainProjectsEntity.dll
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\bin\Debug\net6.0\ref\MainProjectsEntity.dll
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\bin\Debug\net6.0\MainProjectsEntity.pdb
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.AssemblyInfoInputs.cache
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.AssemblyInfo.cs
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.csproj.CoreCompileInputs.cache
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.dll
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\ref\MainProjectsEntity.dll
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.pdb
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\bin\Debug\net6.0\MainProjectsEntity.runtimeconfig.json
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.genruntimeconfig.cache
+C:\Users\tatva\Desktop\CI-Platform\MVC\CI Platform\MainProjectsEntity\obj\Debug\net6.0\MainProjectsEntity.csproj.AssemblyReference.cache

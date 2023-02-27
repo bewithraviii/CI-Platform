@@ -1,58 +1,126 @@
-﻿++Solution 'CI Platform' ‎(1 of 1 project)
+﻿++Solution 'CI Platform' ‎(2 of 2 projects)
 i:{00000000-0000-0000-0000-000000000000}:CI Platform.sln
+++MainProjectsEntity
+i:{00000000-0000-0000-0000-000000000000}:MainProjectsEntity
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\mainprojectsentity.csproj
+++Dependencies
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:>404
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>685
+++Analyzers
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:analyzers
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:analyzers
+++Frameworks
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:frameworks
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:frameworks
+++Packages
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:packages
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:packages
+++MailKit (3.5.0)
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:>2378
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>2379
+++Microsoft.EntityFrameworkCore (8.0.0-preview.1.23111.4)
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:>697
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1391
+++Microsoft.EntityFrameworkCore.Design (8.0.0-preview.1.23111.4)
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:>699
+++Microsoft.EntityFrameworkCore.SqlServer (8.0.0-preview.1.23111.4)
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:>698
+++Microsoft.EntityFrameworkCore.Tools (8.0.0-preview.1.23111.4)
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:>700
+++MimeKit (3.5.0)
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:>2381
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>2380
+++Data
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\data\
+++CI_PlatformContext.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\data\ci_platformcontext.cs
+++Models
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\models\
+++Admin.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\admin.cs
+++Banner.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\banner.cs
+++City.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\city.cs
+++CmsPage.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\cmspage.cs
+++Comment.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\comment.cs
+++Country.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\country.cs
+++FavoriteMission.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\favoritemission.cs
+++GoalMission.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\goalmission.cs
+++Mission.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\mission.cs
+++MissionApplication.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\missionapplication.cs
+++MissionDocument.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\missiondocument.cs
+++MissionInvite.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\missioninvite.cs
+++MissionMedium.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\missionmedium.cs
+++MissionRating.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\missionrating.cs
+++MissionSkill.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\missionskill.cs
+++MissionTheme.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\missiontheme.cs
+++PasswordReset.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\passwordreset.cs
+++Skill.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\skill.cs
+++Story.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\story.cs
+++StoryInvite.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\storyinvite.cs
+++StoryMedium.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\storymedium.cs
+++Timesheet.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\timesheet.cs
+++User.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\user.cs
+++UserSkill.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\models\userskill.cs
+++Class1.cs
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\class1.cs
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\.nuget\packages\microsoft.entityframeworkcore.analyzers\8.0.0-preview.1.23111.4\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.11\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\.nuget\packages\microsoft.extensions.logging.abstractions\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\.nuget\packages\system.text.json\8.0.0-preview.1.23110.8\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{3bbe0943-828c-4503-a29c-0bcf22b5125e}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\mainprojectsentity\microsoft.netcore.app
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\microsoft.netcore.app
 ++CI-Platform
 i:{00000000-0000-0000-0000-000000000000}:CI-Platform
 ++Connected Services 
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1085
-++Dependencies
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1084
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>686
+++Microsoft.EntityFrameworkCore.Tools (6.0.11)
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>714
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.12)
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>715
+++Swashbuckle.AspNetCore (6.3.0)
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>713
+++Projects
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:projects
 ++Properties
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\properties\
 ++wwwroot
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\
-++Controllers
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\controllers\
-++Models
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\models\
-++ErrorViewModel.cs
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\models\errorviewmodel.cs
-++Views
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\
-++Home
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\
-++Shared
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\shared\
-++User
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\
-++ForgotPassword.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\forgotpassword.cshtml
-++LoginPage.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\loginpage.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\loginpage.cshtml
-++RegistrationPage.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\registrationpage.cshtml
-++ResetPassword.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\resetpassword.cshtml
-++_ViewImports.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\_viewimports.cshtml
-++_ViewStart.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\_viewstart.cshtml
-++appsettings.json
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\appsettings.json
-++appsettings.Development.json
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\appsettings.development.json
-++Program.cs
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\program.cs
-++No service dependencies discovered
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1086
-++Analyzers
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:analyzers
-++Frameworks
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:frameworks
-++Packages
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:packages
-++launchSettings.json
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\properties\launchsettings.json
 ++css
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\lib\bootstrap\dist\css\
@@ -65,20 +133,62 @@ i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\lib\
 ++favicon.ico
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\favicon.ico
+++CI_Platform
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\ci_platform\
+++Controllers
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\controllers\
 ++HomeController.cs
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\controllers\homecontroller.cs
 ++UserController.cs
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\controllers\usercontroller.cs
-++Index.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\index.cshtml
-++Privacy.cshtml
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\privacy.cshtml
+++ErrorViewModel.cs
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\models\errorviewmodel.cs
+++MailRequest.cs
+++ViewModel
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\viewmodel\
+++LoginVM.cs
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\viewmodel\loginvm.cs
+++Views
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\
+++Home
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\
+++Shared
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\shared\
 ++_Layout.cshtml
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\shared\_layout.cshtml
 ++_ValidationScriptsPartial.cshtml
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\shared\_validationscriptspartial.cshtml
 ++Error.cshtml
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\shared\error.cshtml
+++User
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\
+++ForgotPassword.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\forgotpassword.cshtml
+++LoginPage.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\loginpage.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\loginpage.cshtml
+++PlatformLandingPage.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\platformlandingpage.cshtml
+++RegistrationPage.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\registrationpage.cshtml
+++ResetPassword.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\resetpassword.cshtml
+++VolunteeringMissionPage.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\volunteeringmissionpage.cshtml
+++VolunteeringStoryListingPage.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\user\volunteeringstorylistingpage.cshtml
+++_ViewImports.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\_viewstart.cshtml
+++appsettings.json
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\appsettings.json
+++appsettings.Development.json
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\appsettings.development.json
+++Program.cs
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\program.cs
+++No service dependencies discovered
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>687
 ++MessagePackAnalyzer
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
 ++Microsoft.AspNetCore.Analyzers
@@ -97,40 +207,28 @@ i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\sdk\6.0.100\sdk
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
 ++Microsoft.CodeAnalysis.CSharp.Analyzers
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
-++Microsoft.CodeAnalysis.NetAnalyzers
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
-++Microsoft.EntityFrameworkCore.Analyzers
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.11\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
-++Microsoft.Extensions.Logging.Generators
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
 ++Microsoft.NET.Sdk.Razor.SourceGenerators
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
-++System.Text.Json.SourceGeneration
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
 ++Microsoft.AspNetCore.App
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\microsoft.aspnetcore.app
-++Microsoft.NETCore.App
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\microsoft.netcore.app
-++Microsoft.EntityFrameworkCore (6.0.11)
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1097
-++Microsoft.EntityFrameworkCore.SqlServer (6.0.11)
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1098
-++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.11)
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1100
-++Swashbuckle.AspNetCore (6.3.0)
-i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:>1099
+++launchSettings.json
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\properties\launchsettings.json
 ++ForgotPassword-Page.css
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\forgotpassword-page.css
 ++Login-Page.css
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\login-page.css
+++PlatformLandingPage.css
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\platformlandingpage.css
 ++RegistrationPage.css
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\registrationpage.css
 ++ResetPassword.css
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\resetpassword.css
 ++site.css
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\site.css
+++VolunteeringMissionPage.css
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\volunteeringmissionpage.css
+++VolunteeringStoryListingPage.css
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\css\volunteeringstorylistingpage.css
 ++404-Page-image.png
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\images\404-page-image.png
 ++achieved.png
@@ -355,6 +453,10 @@ i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\lib\jquery-validation\
 ++jquery-validation-unobtrusive
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\lib\jquery-validation-unobtrusive\
+++Index.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\index.cshtml
+++Privacy.cshtml
+i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\home\privacy.cshtml
 ++_Layout.cshtml.css
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\views\shared\_layout.cshtml.css
 ++dist
@@ -474,3 +576,6 @@ i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 ++bootstrap.esm.min.js.map
 i:{7fdc6f1f-ad6b-4f4d-ac35-ebec4d66b983}:c:\users\tatva\desktop\ci-platform\mvc\ci platform\ci-platform\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++MailSettings.cs
+++NewFolder
+++Settings

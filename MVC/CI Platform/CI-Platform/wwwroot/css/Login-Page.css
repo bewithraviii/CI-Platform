@@ -71,6 +71,10 @@
     opacity: 1;
     color: #F88634;
 }
+    #lgbtn a 
+    {
+        color: #F88634 !important;
+    }
 
     #lgbtn :hover {
         transition-property: none;
