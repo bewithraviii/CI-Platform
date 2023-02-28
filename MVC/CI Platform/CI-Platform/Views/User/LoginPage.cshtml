@@ -70,6 +70,18 @@
               <div class="lgin">
                 <div class="lgdetail">
                   <form method="post">
+                       <div>
+                        <span class="text-danger">
+                            @if(TempData["NoUser"] != null)
+                            {
+                                @TempData["NoUser"].ToString();
+                            }
+                            @if(TempData["UserError"] != null)
+                            {
+                                @TempData["UserError"].ToString();
+                            }
+                        </span> 
+                       </div>
                     <div class="mb-3">
                       <label asp-for="Email" for="exampleInputEmail1" class="form-label">Email address</label>
                       <input asp-for="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ravipatel@gmail.com">

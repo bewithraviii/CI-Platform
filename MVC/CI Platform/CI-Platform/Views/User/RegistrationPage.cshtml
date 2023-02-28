@@ -2,6 +2,7 @@
 @{
     Layout = null;
 }
+@model MainProjectsEntity.Models.User
 
 <!doctype html>
 <html lang="en">
@@ -67,32 +68,50 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="display: flex;align-items: center;justify-content: center;">
               <div class="lgin" style="display: flex;align-items: center;justify-content: center;">
                 <div class="lgdetail">
-                  <form>
+                  <form method="post">
                     <div class="col-md-12">
-                        <label for="exampleInputEmail1" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ravi">
+                        <label asp-for="FirstName" for="exampleInputEmail1" class="form-label">First Name</label>
+                        <input asp-for="FirstName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ravi">
                     </div>
                     <div class="col-md-12">
-                        <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Patel">
+                        <label asp-for="LastName" for="exampleInputEmail1" class="form-label">Last Name</label>
+                        <input asp-for="LastName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Patel">
                     </div>
                     <div class="col-md-12">
-                        <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9865327411">
+                        <label asp-for="PhoneNumber" for="exampleInputEmail1" class="form-label">Phone Number</label>
+                        <input asp-for="PhoneNumber" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9865327411">
                     </div>
                     <div class="col-md-12">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ravipatel@gmail.com">
+                      <label asp-for="Email" for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input asp-for="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ravipatel@gmail.com">
                     </div>
                     <div class="col-md-12">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="**********">
+                      <label asp-for="Password" for="exampleInputPassword1" class="form-label">Password</label>
+                      <input asp-for="Password" type="password" class="form-control" id="pass" pattern="^\S{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="**********">
                     </div>
                     <div class="col-md-12">
-                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="**********">
+                        <label asp-for="Password" for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                        <input asp-for="Password" type="password" class="form-control" id="cpass" pattern="^\S{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="**********">
                     </div>
-                    <button type="button" class="btn btn-outline-secondary" id="lgbtn">Login</button>
+                    @*<div class=d-flex style="margin-top:20px;">
+                        <div class="col-6">
+                        <select asp-for="CityId" class="form-select" aria-label="Default select example">
+                        <option>Select-Country</option>
+                        <option value="1">India</option>
+                        <option value="2">Dubai</option>
+                        <option value="3">Canada</option>
+                        </select>
+                        </div>
+                        <div class="col-6">
+                        <select asp-for="CityId" class="form-select" aria-label="Default select example">
+                        <option>Select-City</option>
+                        <option value="1">Ahmedabad</option>
+                        <option value="2">Mumbai</option>
+                        <option value="3">Chennai</option>
+                        </select>
+                        </div>
+                    </div>*@
+                    <button type="submit" class="btn btn-outline-secondary" id="lgbtn">Login</button>
                     </form>
                    
                     <div class="footertxt">
