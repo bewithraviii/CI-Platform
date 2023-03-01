@@ -94,53 +94,65 @@ namespace CI_Platform.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult ForgotPassword(User obj)
         {
+
+            //System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+
+
             if (!ModelState.IsValid)
             {
-                //System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
-
-                //string mail = HttpContext.Request.Form["f-email"];
-
                 var check = _db.Users.Where(a => a.Email == obj.Email).ToList().Count();
                 if(check != 0)
                 {
+                
                     try
                     {
+                        
+                        string token = Guid.NewGuid().ToString();
+                        string email = obj.Email;
+                        var link = Url.ActionLink("ResetPassword", "User", new {token});
+
+
                         MailMessage newMail = new MailMessage();
                         // use the Gmail SMTP Host
                         SmtpClient client = new SmtpClient("smtp.gmail.com");
 
                         // Follow the RFS 5321 Email Standard
-                        newMail.From = new MailAddress("andrew.boyle@ethereal.email", "andrew");
+                        newMail.From = new MailAddress("dummypatel137@gmail.com", "Dummy Patel");
 
-                        newMail.To.Add("ravipateljigneshpatel137@gmai.com");// declare the email subject
+                        newMail.To.Add("ravipateljigneshpatel137@gmail.com");// declare the email subject newMail.To.Add("obj.Email");
 
-                        newMail.Subject = "Passwoed Change Link and Options"; // use HTML for the email body
+                        newMail.Subject = "Password Change Link and Options"; // use HTML for the email body
 
-                        newMail.IsBodyHtml = true; newMail.Body = "<h1> This is my first Templated Email in C# </h1>";
+                        newMail.IsBodyHtml = true; newMail.Body = "<h1> This is my first Templated Email which will provide you Email link for  </h1><br>" + link;
 
                         // enable SSL for encryption across channels
                         client.EnableSsl = true;
-                        // Port 465 for SSL communication
-                        client.Port = 465;
+                        // Port 587 for SSL communication
+                        client.Port = 587;
                         // Provide authentication information with Gmail SMTP server to authenticate your sender account
-                        client.Credentials = new System.Net.NetworkCredential("andrew.boyle@ethereal.email", "FmCRRHgf4h8v12jc8y");
+                        client.Credentials = new System.Net.NetworkCredential("dummypatel137@gmail.com", "wfepiqtslzxwklwo");
 
                         client.Send(newMail); // Send the constructed mail
                         Console.WriteLine("Email Sent to registered email");
+
+                         TempData["Emailsent"] = "Reset-Password Link is sent to provided E-mail please check and create New-Password";
+
                     }
                     catch (Exception ex)
                     {
                         Console.WriteLine("Error -" + ex);
                         TempData["Exception"] = ex.ToString();
                     }
+                    
                 }
                 else
                 {
-                        TempData["Emailerror"] = "Error in Sending Email Please check and enter correct email";
+                        TempData["Emailerror"] = "Error in sending email please check and enter correct email";
                 }
-
             }
-            return RedirectToAction("ForgotPassword","User");
+            return View();
+            
+
         }
 
 
@@ -148,9 +160,23 @@ namespace CI_Platform.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult RegistrationPage(User obj)
         {
+            if (!ModelState.IsValid)
+            {
+                _db.Users.Add(obj);
+                _db.SaveChanges();
+                TempData["Registered"] = "User Register Successfully";
+            }
+            return View();
+        }
+
+
+
+        public IActionResult ResetPassword(User obj)
+        {
+
             _db.Users.Add(obj);
-            _db.SaveChanges();
-            return RedirectToAction("LoginPage","User");
+            _db.SaveChanges(true);
+            return View();
         }
 
 

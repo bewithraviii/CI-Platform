@@ -25,7 +25,12 @@
       "ProjectGuid": "46714034-689f-4f8d-84b8-30981ed7d2e9",
       "DisplayName": "MainProjectRepository",
       "ColorIndex": 3
+    },
+    "73f48800-d232-4de2-a7ee-5ccd3d68b9d2": {
+      "ProjectGuid": "73f48800-d232-4de2-a7ee-5ccd3d68b9d2",
+      "DisplayName": "MainRepository",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

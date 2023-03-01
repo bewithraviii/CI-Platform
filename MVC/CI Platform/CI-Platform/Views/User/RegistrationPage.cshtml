@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="~/css/RegistrationPage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="toastr.css" rel="stylesheet"/>
     <title>CI Registration</title>
   </head>
   <body>
@@ -67,31 +68,59 @@
 
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12" style="display: flex;align-items: center;justify-content: center;">
               <div class="lgin" style="display: flex;align-items: center;justify-content: center;">
+                            <span>
+                            @if(TempData["Registered"] != null)
+                                {
+                                    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+                                    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+                                    <script type="text/javascript">
+                                        @*@TempData["Registered"]*@
+                                        toastr.success('@TempData["Registered"]');
+                                    </script>
+                                }
+                            </span>
+                            <span>
+                            @if(TempData["EnterEmail"] != null)
+                                {
+                                    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+                                    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+                                    <script type="text/javascript">
+                                        @*@TempData["Registered"]*@
+                                        toastr.warning('@TempData["EnterEmail"]');
+                                    </script>
+                                }
+                            </span>
                 <div class="lgdetail">
                   <form method="post">
                     <div class="col-md-12">
                         <label asp-for="FirstName" for="exampleInputEmail1" class="form-label">First Name</label>
                         <input asp-for="FirstName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ravi">
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
                     </div>
                     <div class="col-md-12">
                         <label asp-for="LastName" for="exampleInputEmail1" class="form-label">Last Name</label>
                         <input asp-for="LastName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Patel">
+                        <span asp-validation-for="LastName" class="text-danger"></span>
                     </div>
                     <div class="col-md-12">
                         <label asp-for="PhoneNumber" for="exampleInputEmail1" class="form-label">Phone Number</label>
-                        <input asp-for="PhoneNumber" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9865327411">
+                        <input asp-for="PhoneNumber" type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="9865327411">
+                        @*<span asp-validation-for="PhoneNumber" class="text-danger"></span>*@
                     </div>
                     <div class="col-md-12">
                       <label asp-for="Email" for="exampleInputEmail1" class="form-label">Email address</label>
                       <input asp-for="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ravipatel@gmail.com">
+                      <span asp-validation-for="Email" class="text-danger"></span>  
                     </div>
                     <div class="col-md-12">
                       <label asp-for="Password" for="exampleInputPassword1" class="form-label">Password</label>
-                      <input asp-for="Password" type="password" class="form-control" id="pass" pattern="^\S{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="**********">
+                      <input asp-for="Password" type="password" class="form-control" id="pass" pattern="^\S{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.cpass.pattern = this.value;" placeholder="**********">
+@*                      <span asp-validation-for="Password" class="text-danger"></span>*@
                     </div>
                     <div class="col-md-12">
                         <label asp-for="Password" for="exampleInputPassword1" class="form-label">Confirm Password</label>
                         <input asp-for="Password" type="password" class="form-control" id="cpass" pattern="^\S{8,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="**********">
+@*                        <span asp-validation-for="Password" class="text-danger"></span>*@
                     </div>
                     @*<div class=d-flex style="margin-top:20px;">
                         <div class="col-6">
@@ -130,7 +159,7 @@
 
     
 
-    
+    <script src="toastr.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> 
   </body>

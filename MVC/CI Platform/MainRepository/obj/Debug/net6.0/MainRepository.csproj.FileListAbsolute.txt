@@ -1,0 +1,12 @@
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\bin\Debug\net6.0\MainRepository.deps.json
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\bin\Debug\net6.0\MainRepository.dll
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\bin\Debug\net6.0\ref\MainRepository.dll
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\bin\Debug\net6.0\MainRepository.pdb
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\MainRepository.csproj.AssemblyReference.cache
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\MainRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\MainRepository.AssemblyInfoInputs.cache
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\MainRepository.AssemblyInfo.cs
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\MainRepository.csproj.CoreCompileInputs.cache
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\MainRepository.dll
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\ref\MainRepository.dll
+C:\Users\tatva\Desktop\CI-CLone2\MVC\CI Platform\MainRepository\obj\Debug\net6.0\MainRepository.pdb

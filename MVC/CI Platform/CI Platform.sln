@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CI-Platform", "CI-Platform\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainProjectsEntity", "MainProjectsEntity\MainProjectsEntity.csproj", "{3BBE0943-828C-4503-A29C-0BCF22B5125E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainRepository", "MainRepository\MainRepository.csproj", "{73F48800-D232-4DE2-A7EE-5CCD3D68B9D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3BBE0943-828C-4503-A29C-0BCF22B5125E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BBE0943-828C-4503-A29C-0BCF22B5125E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BBE0943-828C-4503-A29C-0BCF22B5125E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F48800-D232-4DE2-A7EE-5CCD3D68B9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F48800-D232-4DE2-A7EE-5CCD3D68B9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F48800-D232-4DE2-A7EE-5CCD3D68B9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F48800-D232-4DE2-A7EE-5CCD3D68B9D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
