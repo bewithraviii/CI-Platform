@@ -9,5 +9,9 @@ public partial class PasswordReset
 
     public string? Token { get; set; }
 
+    public int Id { get; set; }
+
     public DateTime CreatedAt { get; set; }
+
+    public bool? ResetFlag { get; set; }
 }

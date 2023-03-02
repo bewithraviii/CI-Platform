@@ -80,13 +80,13 @@
                                 }
                             </span>
                             <span>
-                            @if(TempData["EnterEmail"] != null)
+                            @if(TempData["Registeredfail"] != null)
                                 {
                                     <script src="~/lib/jquery/dist/jquery.min.js"></script>
                                     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
                                     <script type="text/javascript">
                                         @*@TempData["Registered"]*@
-                                        toastr.warning('@TempData["EnterEmail"]');
+                                        toastr.warning('@TempData["Registeredfail"]');
                                     </script>
                                 }
                             </span>

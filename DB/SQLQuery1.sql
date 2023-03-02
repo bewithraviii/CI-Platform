@@ -18,3 +18,12 @@ ALTER TABLE users
 ALTER COLUMN city_id bigint NULL
 ALTER TABLE users 
 ALTER COLUMN country_id bigint NULL
+
+
+
+ALTER TABLE password_reset
+ADD ResetFlag  bit DEFAULT '0';
+
+
+ALTER TABLE users
+ALTER COLUMN phone_number nvarchar(11);

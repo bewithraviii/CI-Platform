@@ -207,6 +207,7 @@ deleted_at datetime default Null,
 create table password_reset (
 email nvarchar(191),
 token nvarchar(191),
+id int IDENTITY(1,1) Primary key,
 created_at datetime Not Null default CURRENT_TIMESTAMP,
 )
 
