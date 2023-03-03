@@ -21,8 +21,4 @@
     <PackageReference Include="MimeKit" Version="3.5.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models2\" />
-  </ItemGroup>
-
 </Project>

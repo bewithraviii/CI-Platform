@@ -1,11 +1,13 @@
 ﻿
 using MainProjectsEntity.Data;
 using MainProjectsEntity.Models;
+using MainProjectsEntity.Sessions;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Common;
 using System.Net.Mail;
 
 namespace CI_Platform.Controllers
+
 {
     public class UserController : Controller
     {
@@ -13,9 +15,11 @@ namespace CI_Platform.Controllers
 
 
         private readonly CI_PlatformContext _db;
-        public UserController(CI_PlatformContext db)
+        private readonly IHttpContextAccessor _context;
+        public UserController(CI_PlatformContext db,IHttpContextAccessor httpContextAccessor)
         {
             _db = db;
+            _context = httpContextAccessor;
         }
 
 
@@ -24,8 +28,6 @@ namespace CI_Platform.Controllers
         {
             return View();
         }
-
-
 
         public IActionResult ForgotPassword()
         {
@@ -44,10 +46,32 @@ namespace CI_Platform.Controllers
             return View();
         }
 
-        public IActionResult PlatformLandingPage()
+        public IActionResult PlatformLandingPage(string Id)
         {
-            return View();
+            
+            if(HttpContext.Session.GetString("Email") == null)
+            {
+                return RedirectToAction("LoginPage");
+            }
+            else
+            {
+                string userid = Id;
+                long uid = Convert.ToInt64(userid);
+                var user = _db.Users.Where(c => c.UserId == uid).FirstOrDefault();
+                if (user != null)
+                {
+                    var users = new User
+                    {
+                        FirstName = user.FirstName,
+                        LastName = user.LastName,
+                    };
+
+                    return View(users);
+                }
+                return View();
+            }
         }
+
         public IActionResult VolunteeringMissionPage()
         {
             return View();
@@ -64,33 +88,46 @@ namespace CI_Platform.Controllers
 
 
 
+
+
+
+
+
+
+        #region User Login-and-Authentication
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult LoginPage(User obj)
+        public IActionResult LoginPage(User obj, string Email, string Password)
         {
             if (!ModelState.IsValid)
             {
-
 
                 var verify = _db.Users.Where(a => a.Email == obj.Email && a.Password == obj.Password).ToList().Count();
 
                 if (verify == 1)
                 {
-                    return RedirectToAction("PlatformLandingPage", "User");
+
+                    var user = _db.Users.Where(c => c.Email == obj.Email).FirstOrDefault();
+
+                    _context.HttpContext.Session.SetString("Email", obj.Email);
+                    return RedirectToAction("PlatformLandingPage", "User", new { @Id = user.UserId });
                 }
 
                 else if (verify == 0)
                 {
                     TempData["Usernotfound"] = "User Not Found";
                 }
+
                 else
                 {
                     TempData["Usererror"] = "Error in login";
+                    return View();
                 }
-
             }
             return View(obj);
         }
+
 
 
         [HttpPost]
@@ -112,7 +149,7 @@ namespace CI_Platform.Controllers
 
                         string token = Guid.NewGuid().ToString();
                         string email = obj.Email;
-                        var link = Url.ActionLink("ResetPassword", "User", new {token});
+                        var link = Url.ActionLink("ResetPassword", "User", new { token });
 
 
                         MailMessage newMail = new MailMessage();
@@ -171,13 +208,13 @@ namespace CI_Platform.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult RegistrationPage(User obj)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _db.Users.Add(obj);
                 _db.SaveChanges();
                 TempData["Registered"] = "User Register Successfully";
             }
-            else 
+            else
             {
                 TempData["Registeredfail"] = "User Registration Failed Please try again!!";
             }
@@ -191,7 +228,7 @@ namespace CI_Platform.Controllers
         {
             if (ModelState.IsValid)
             {
-                
+
                 //var chngeflag = _db.PasswordResets.ToList();
                 string newpass = HttpContext.Request.Form["NewPass"];   //by naming the input field of new-password
                 var currenturl = HttpContext.Request.Headers.Referer.ToString();    // getting the url into string from link
@@ -222,8 +259,21 @@ namespace CI_Platform.Controllers
                 }
             }
             return RedirectToAction("LoginPage");
-            
+
 
         }
+
+        #endregion
+
+
+        #region session
+
+        public ActionResult Logout()
+        {
+            HttpContext.Session.Remove("Email");
+            return RedirectToAction("LoginPage");
+        }
+
+        #endregion
     }
 }

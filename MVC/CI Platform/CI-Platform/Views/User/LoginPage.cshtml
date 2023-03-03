@@ -73,32 +73,32 @@
                   <form method="post">
                        <div>
                         <span class="text-danger">
-                            @if(TempData["NoUser"] != null)
+                            @if(TempData["Usernotfound"] != null)
                             {
                                 <script src="~/lib/jquery/dist/jquery.min.js"></script>
                                     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
                                     <script type="text/javascript">
-                                toastr.success('@TempData["NoUser"]');
+                                    toastr.error('@TempData["Usernotfound"]');
                                     </script>
                             }
-                            @if(TempData["UserError"] != null)
+                            @if(TempData["Usererror"] != null)
                             {
                                 <script src="~/lib/jquery/dist/jquery.min.js"></script>
                                     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
                                     <script type="text/javascript">
                                        @* TempData["Emailerror"]*@
-                                     toastr.success('@TempData["UserError"]');
+                                     toastr.warning('@TempData["UserError"]');
                                     </script>
                             }
                         </span> 
                         <span>
-                        @if(TempData["Resetsuccess"] != null)
+                        @if(TempData["success"] != null)
                                 {
                                     <script src="~/lib/jquery/dist/jquery.min.js"></script>
                                     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
                                     <script type="text/javascript">
                                        @* TempData["Emailerror"]*@
-                                     toastr.success('@TempData["Resetsuccess"]');
+                                     toastr.success('@TempData["success"]');
                                     </script>
                                 }
                         </span>
