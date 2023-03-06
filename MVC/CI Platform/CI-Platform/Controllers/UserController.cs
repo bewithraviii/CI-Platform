@@ -16,7 +16,7 @@ namespace CI_Platform.Controllers
 
         private readonly CI_PlatformContext _db;
         private readonly IHttpContextAccessor _context;
-        public UserController(CI_PlatformContext db,IHttpContextAccessor httpContextAccessor)
+        public UserController(CI_PlatformContext db, IHttpContextAccessor httpContextAccessor)
         {
             _db = db;
             _context = httpContextAccessor;
@@ -48,8 +48,8 @@ namespace CI_Platform.Controllers
 
         public IActionResult PlatformLandingPage(string Id)
         {
-            
-            if(HttpContext.Session.GetString("Email") == null)
+
+            if (HttpContext.Session.GetString("Email") == null)
             {
                 return RedirectToAction("LoginPage");
             }
@@ -64,9 +64,12 @@ namespace CI_Platform.Controllers
                     {
                         FirstName = user.FirstName,
                         LastName = user.LastName,
+                        Avatar = user.Avatar,
                     };
 
                     return View(users);
+
+
                 }
                 return View();
             }
@@ -86,9 +89,30 @@ namespace CI_Platform.Controllers
 
 
 
+        public JsonResult Country()
+        {
+            var cnt = _db.Countries.ToList();
+            return new JsonResult(cnt);
+        }
+
+        public JsonResult City(int countryId)
+        {
+            var ct = _db.Cities.Where(a => a.Country.CountryId == countryId).ToList();
+            return new JsonResult(ct);
+        }
 
 
-
+        public JsonResult Themes()
+        {
+            var theme = _db.MissionThemes.ToList();
+            return new JsonResult(theme);
+        }
+        
+        public JsonResult Skills()
+        {
+            var skill = _db.Skills.ToList();
+            return new JsonResult(skill);
+        }
 
 
 
@@ -116,7 +140,7 @@ namespace CI_Platform.Controllers
 
                 else if (verify == 0)
                 {
-                    TempData["Usernotfound"] = "User Not Found";
+                    TempData["Usernotfound"] = "User Not Found or Invalid Crediantials \"PLEASE ENTER CORRECT DETAILS\"";
                 }
 
                 else
@@ -273,6 +297,19 @@ namespace CI_Platform.Controllers
             HttpContext.Session.Remove("Email");
             return RedirectToAction("LoginPage");
         }
+
+        #endregion
+
+
+        #region MissionDatafetch
+
+        public IActionResult PlatformLandingPage()
+        {
+            var allmissioncat = _db.Missions.ToList();
+            return View(allmissioncat);
+        }
+
+
 
         #endregion
     }

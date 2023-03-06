@@ -219,7 +219,7 @@
 
         .showlist .mission .cardImg .card-img-top {
             object-fit: cover;
-            min-width: fit-content;
+           /* min-width: fit-content;*/
             height: inherit;
         }
 
