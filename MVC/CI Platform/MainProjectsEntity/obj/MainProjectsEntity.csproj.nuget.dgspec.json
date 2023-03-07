@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tatva\\Desktop\\CI-CLone2\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj": {}
+    "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tatva\\Desktop\\CI-CLone2\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj": {
+    "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tatva\\Desktop\\CI-CLone2\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj",
+        "projectUniqueName": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj",
         "projectName": "MainProjectsEntity",
-        "projectPath": "C:\\Users\\tatva\\Desktop\\CI-CLone2\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj",
+        "projectPath": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\MainProjectsEntity\\MainProjectsEntity.csproj",
         "packagesPath": "C:\\Users\\tatva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tatva\\Desktop\\CI-CLone2\\MVC\\CI Platform\\MainProjectsEntity\\obj\\",
+        "outputPath": "C:\\Users\\tatva\\Desktop\\CI-Platform\\MVC\\CI Platform\\MainProjectsEntity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

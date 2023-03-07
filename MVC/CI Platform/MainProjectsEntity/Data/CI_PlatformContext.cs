@@ -330,10 +330,7 @@ public partial class CI_PlatformContext : DbContext
             entity.ToTable("mission");
 
             entity.Property(e => e.MissionId).HasColumnName("mission_id");
-            entity.Property(e => e.Availability)
-                .HasMaxLength(20)
-                .IsUnicode(false)
-                .HasColumnName("availability");
+            entity.Property(e => e.Availability).HasColumnName("availability");
             entity.Property(e => e.CityId).HasColumnName("city_id");
             entity.Property(e => e.CountryId).HasColumnName("country_id");
             entity.Property(e => e.CreatedAt)

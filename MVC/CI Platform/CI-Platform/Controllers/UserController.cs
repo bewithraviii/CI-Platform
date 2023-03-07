@@ -1,6 +1,7 @@
 ﻿
 using MainProjectsEntity.Data;
 using MainProjectsEntity.Models;
+using MainProjectsEntity.ViewModel;
 using MainProjectsEntity.Sessions;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Common;
@@ -60,20 +61,43 @@ namespace CI_Platform.Controllers
                 var user = _db.Users.Where(c => c.UserId == uid).FirstOrDefault();
                 if (user != null)
                 {
-                    var users = new User
-                    {
-                        FirstName = user.FirstName,
-                        LastName = user.LastName,
-                        Avatar = user.Avatar,
-                    };
-
-                    return View(users);
-
-
+                    ViewBag.FirstName = user.FirstName;
+                    ViewBag.LastName = user.LastName;
+                    ViewBag.Avatar = user.Avatar;
                 }
-                return View();
+
+                List<MissionCard> list = MissionCards();
+                return View(list);
             }
         }
+
+
+        public List<MissionCard> MissionCards()
+        {
+            using (var db = _db)
+            {
+                var missions = (from a in _db.Missions
+                                join b in _db.Cities on a.CityId equals b.CityId
+                                join c in _db.MissionThemes on a.ThemeId equals c.MissionThemeId
+                                select new MissionCard
+                                {
+                                    Title = a.Title,
+                                    ShortDescription = a.ShortDescription,
+                                    Description = a.Description,
+                                    StartDate = a.StartDate,
+                                    EndDate = a.EndDate,
+                                    CityName = b.Name,
+                                    Theme = c.Title,
+                                    OrganizationName = a.OrganizationName,
+                                    Availability = a.Availability,
+                                }).ToList();
+                return missions;
+            }
+        }
+
+
+
+
 
         public IActionResult VolunteeringMissionPage()
         {
@@ -303,14 +327,7 @@ namespace CI_Platform.Controllers
 
         #region MissionDatafetch
 
-        public IActionResult PlatformLandingPage()
-        {
-            var allmissioncat = _db.Missions.ToList();
-            return View(allmissioncat);
-        }
-
-
-
+    
         #endregion
     }
 }

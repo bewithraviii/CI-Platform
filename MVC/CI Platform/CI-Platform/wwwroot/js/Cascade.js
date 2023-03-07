@@ -59,8 +59,18 @@ function GetSkills() {
 
 
 
+var kaarsearch = document.getElementById('#search');
+var missionlist = document.getElementsByClass('.mission-list');
+var missiontitle = document.createElementByClass('.card-title');
 
 
+kaarsearch.addEventListener('keyup', SearchMission);
+
+
+function SearchMission() {
+    var low = kaarsearch.to.LowerCase();
+
+}
 
 
 

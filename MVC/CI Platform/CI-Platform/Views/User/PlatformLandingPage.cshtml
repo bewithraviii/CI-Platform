@@ -2,7 +2,7 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@model MainProjectsEntity.Models.Mission;
+@model IEnumerable<MainProjectsEntity.ViewModel.MissionCard>
 
 <!doctype html>
 <html lang="en">
@@ -58,7 +58,12 @@
       <div class="container">
         <div class="mission-list mt-5">
 
-          <div class="mission card">
+
+
+            @foreach(var obj in @Model)
+            {
+
+            <div class="mission card">
               <div class="cardImg">
                   <img class="card-img-top"
                       src="~/images/Grow-Trees-On-the-path-to-environment-sustainability-login.png"
@@ -66,18 +71,11 @@
               </div>
               <div class="card-body">
                   <div class="cardtxt">
-                      <h4 class="card-title">Grow-Trees-On-the-path-to-environment-sustainability</h4>
-                      <p class="card-text">Lorem ipsum dolor sit amet
-                          consectetur
-                          adipisicing elit. Reiciendis laudantium
-                          culpa
-                          exercitationem nemo dolores amet molestiae
-                          obcaecati
-                      </p>
+                      <h4 class="card-title">@obj.Title</h4>
+                      <p class="card-text">@obj.Description </p>
                   </div>
                   <div class="ratingclass mt-3">
-                      <p class="align-self-center m-0"><b>Tree
-                              Canada</b></p>
+                      <p class="align-self-center m-0"><b>@obj.OrganizationName</b></p>
                       <div class="rating fs-5">
                           <span class="star" data-value="1"><i
                                   class="bi bi-star" style="color: orange;"></i></span>
@@ -93,7 +91,7 @@
                   </div>
                   <div class="mission-detail">
                       <div class=" container timeline
-                          text-center">From 10/01/2019 until 25/2/2019</div>
+                          text-center">From @obj.StartDate?.ToString("d") until @obj.EndDate?.ToString("d")</div>
                       <div class="border-top properties
                           border-bottom">
                           <div class="d-flex mt-4
@@ -102,14 +100,14 @@
                                   <img class="pt-2 pe-3"
                                       src="~/images/Seats-left.png"
                                       alt="">
-                                  <div>10</div>
+                                  <div>@obj.Availability</div>
                                   <div>Seats left</div>
                               </div>
                               <div class="d-grid gridctnr">
                                   <img class="pt-2 pe-3"
                                       src="~/images/deadline.png"
                                       alt="">
-                                  <div>09/01/2019</div>
+                                  <div>@obj.EndDate?.ToString("d")</div>
                                   <div>Deadline</div>
                               </div>
                           </div>
@@ -121,8 +119,13 @@
                               class="bi bi-arrow-right"></i></a>
                   </div>
               </div>
-          </div>
-          <div class="mission card">
+            </div>
+
+            }
+
+
+
+@*          <div class="mission card">
             <div class="cardImg">
                 <img class="card-img-top"
                     src="~/images/Education-Supplies-for-Every--Pair-of-Shoes-Sold.png"
@@ -637,7 +640,7 @@
                 </div>
             </div>
           </div>
-
+*@
       </div>
       </div>
     </div>
