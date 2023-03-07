@@ -33,7 +33,7 @@
     <div class="row">
       <div class="d-flex bd-highlight mb-3" style="justify-content: center; align-items: center;" >
         <div class="total-mission me-auto p-2 bd-highlight" style="font-family: NotoSans-Light; font-size: 24px; color: #414141;"> 
-          Explore <b>72 missions</b>
+          Explore <b>@Model.Count() missions</b>
         </div>
         <div class="options p-2 bd-highlight">
             <div class="select">
@@ -56,6 +56,14 @@
 
     <div class="row">
       <div class="container">
+          <div class="nomissionfound">
+              <div class="">
+                  <div class="nomissiontext" style="align-items:center;justify-content:center;display:flex;font-size:26px">No Mission Found</div>
+                  <div class=" mt-3 apply">
+                      <a href="#" class="btn lgbtn ">Submit New Mission <i class="bi bi-arrow-right"></i></a>
+                  </div>
+              </div>
+          </div>
         <div class="mission-list mt-5">
 
 

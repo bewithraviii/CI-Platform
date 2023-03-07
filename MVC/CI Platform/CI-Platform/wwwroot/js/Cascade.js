@@ -59,17 +59,44 @@ function GetSkills() {
 
 
 
-var kaarsearch = document.getElementById('#search');
-var missionlist = document.getElementsByClass('.mission-list');
-var missiontitle = document.createElementByClass('.card-title');
 
 
-kaarsearch.addEventListener('keyup', SearchMission);
+var kaarsearch = document.querySelector("#search");
+var missionlist = document.querySelectorAll(".mission-list");
+var missiontitle = document.querySelectorAll(".card-title");
+kaarsearch.addEventListener('keyup',SearchMission);
 
 
-function SearchMission() {
-    var low = kaarsearch.to.LowerCase();
+function SearchMission(event)
+{
+    
 
+    var str = kaarsearch.value.toLowerCase();
+    var visibleMissions = 0;
+
+    for (var i = 0; i < missionlist.length; i++)
+    {
+        if (missiontitle[i].innerHTML.toLowerCase().include(str))
+        {
+            missionlist[i].classList.remove("d-none")
+        }
+        else
+        {
+            missionlist[i].classList.add("d-none");
+        }
+    }
+    console.log(visibleMissions);
+    if (visibleMissions === 0)
+    {
+        document.getElementById("nomissionfound").style.display = "block";
+        document.getElementById("mission-list").style.display = "none";
+        document.getElementById("total-mission").textContent = "";
+    }
+    else
+    {
+        document.getElementById("nomissionfound").style.display = "none";
+        document.getElementById("mission-count").textContent = (visibleMissions) + " mission" + (visibleMissions > 1 ? "s" : "");
+    }
 }
 
 
