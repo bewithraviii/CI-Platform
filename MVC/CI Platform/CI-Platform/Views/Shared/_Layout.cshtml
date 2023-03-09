@@ -50,7 +50,7 @@
               <div class="d-flex">
                 <div class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
-                    <img class="userimg" @ViewBag.Avatar>&nbsp;
+                    <img class="userimg" src="~/images/user-img-large.png">&nbsp;   @*@ViewBag.Avatar*@
                       <span> @ViewBag.FirstName @ViewBag.LastName</span>
                       <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
                   </a>
@@ -76,7 +76,7 @@
                     <div class="filterpart1">
                       <div class="partsearch">
                         <form class="d-flex">
-                        <button class="btn" type="submit"><img src="~/images/search.png"></button>&nbsp;
+                        <button class="btn" type="button"><img src="~/images/search.png"></button>&nbsp;
                         <input id="search" class="form-control me-2" type="search" placeholder="Search mission..." aria-label="Search" style="border: none;">
                         </form>
                       </div>  
