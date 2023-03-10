@@ -311,6 +311,36 @@
     border-color: #F88634 !important;
 }
 
+
+.listPage {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+}
+
+    .listPage li {
+        background-color: whitesmoke;
+        padding-left: 0.6rem;
+        padding-right: 0.6rem;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        border-radius: 10%;
+        display: inline-block;
+        margin: 0 10px;
+        cursor: pointer;
+        border: 1px solid #E8E8E8;
+    }
+
+    .listPage .active {
+        background-color: #F88634;
+        color: #fff;
+    }
+
+
+
+
+
 .footer 
 {
     position: absolute;

@@ -26,5 +26,7 @@ namespace MainProjectsEntity.ViewModel
         public DateTime? EndDate { get; set; }
 
         public int? Availability { get; set; }
+
+        public string? GoalObjectiveText { get; set; }
     }
 }

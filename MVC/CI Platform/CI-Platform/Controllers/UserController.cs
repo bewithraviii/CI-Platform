@@ -17,6 +17,7 @@ namespace CI_Platform.Controllers
 
         private readonly CI_PlatformContext _db;
         private readonly IHttpContextAccessor _context;
+
         public UserController(CI_PlatformContext db, IHttpContextAccessor httpContextAccessor)
         {
             _db = db;
@@ -47,7 +48,7 @@ namespace CI_Platform.Controllers
             return View();
         }
 
-        public IActionResult PlatformLandingPage(string Id)
+        public IActionResult PlatformLandingPage(string Id, int pg=1)
         {
 
             if (HttpContext.Session.GetString("Email") == null)
@@ -66,8 +67,35 @@ namespace CI_Platform.Controllers
                     ViewBag.Avatar = user.Avatar;
                 }
 
-                List<MissionCard> list = MissionCards();
-                return View(list);
+
+                if(pg < 0)
+                {
+                    pg = pg;
+                }
+
+                const int pageSize = 3;
+                var missions = MissionCards();
+                int recsSkip = (pg - 1) * pageSize;
+                if(!string.IsNullOrEmpty(searchString))
+                {
+                    
+
+                }
+                else
+                { 
+
+
+
+                int recsCount = missions.Count();
+                var pager = new Pager(recsCount, pg, pageSize);
+                var data = missions.Skip(recsSkip).Take(pager.PageSize).ToList();
+                this.ViewBag.Pager = pager;
+                
+
+                return View(data);
+                }
+                //List<MissionCard> list = MissionCards();
+                //return View(list);
             }
         }
 
@@ -79,6 +107,8 @@ namespace CI_Platform.Controllers
                 var missions = (from a in _db.Missions
                                 join b in _db.Cities on a.CityId equals b.CityId
                                 join c in _db.MissionThemes on a.ThemeId equals c.MissionThemeId
+                                join d in _db.GoalMissions on a.MissionId equals d.MissionId into temp
+                                from d in temp.DefaultIfEmpty()
                                 select new MissionCard
                                 {
                                     Title = a.Title,
@@ -88,6 +118,7 @@ namespace CI_Platform.Controllers
                                     EndDate = a.EndDate,
                                     CityName = b.Name,
                                     Theme = c.Title,
+                                    GoalObjectiveText = d.GoalObjectiveText,
                                     OrganizationName = a.OrganizationName,
                                     Availability = a.Availability,
                                 }).ToList();

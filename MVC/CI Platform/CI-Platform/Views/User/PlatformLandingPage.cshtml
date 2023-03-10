@@ -1,8 +1,24 @@
-﻿
+﻿@using MainProjectsEntity.ViewModel
+
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @model IEnumerable<MainProjectsEntity.ViewModel.MissionCard>
+
+@{
+    //ViewData["Title"] = "MissionListing";
+    //Layout = "~/Views/User/PlatformLandingPage";
+    Pager pager= new Pager();
+    int pageNo = 0;
+    if(ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+
+    }
+}
+
+
 
 <!doctype html>
 <html lang="en">
@@ -83,7 +99,7 @@
                       <p class="card-text">@obj.Description </p>
                   </div>
                   <div class="ratingclass mt-3">
-                      <p class="align-self-center m-0"><b>@obj.OrganizationName</b></p>
+                      <p id="organisationmission" class="align-self-center m-0"><b>@obj.OrganizationName</b></p>
                       <div class="rating fs-5">
                           <span class="star" data-value="1"><i
                                   class="bi bi-star" style="color: orange;"></i></span>
@@ -656,26 +672,90 @@
     <div class="row mt-5">
       <div class="d-flex justify-content-center">
         <nav aria-label="Page navigation example">
-        <ul class="pagination" id="pagination-container">
+            @if(pager.TotalPages > 1)
+            {
+                                <ul class="pagination" id="pagination-container">
+                                    @if (pager.CurrentPage > 1)
+                                    {
+                                        <li class="page-item previous-page disable" style="color: #F88634;">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true"> &laquo; </span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" aria-label="Previous" asp-route-pg="@(pager.CurrentPage -1)">
+                                                <i class="bi bi-chevron-left font-weight-bold" style="font-size:10px;"></i>
+                                            </a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="page-item disabled">
+                                        <a class="page-link" aria-label="First" asp-route-pg="1">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                    <a class="page-link" aria-label="Previous" asp-route-pg="@(pager.CurrentPage -1)">
+                                    <i class="bi bi-chevron-left font-weight-bold" style="font-size:10px;"></i>
+                                    </a>
+                                    </li>   
+                                    }
+                                    
+                                    
+                                    @for(var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+                                    {
+                                    <li class="page-item @(pge == pager.CurrentPage ? "active" : "")">
+                                     <a class="page-link" asp-controller="User" asp-action="PlatformLandingPage" asp-route-pg="@pge" >@pge</a>
+                                    </li>
+                                    }
 
-          <li class="page-item previous-page disable" style="color: #F88634;">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true"> < </span>
-            </a>
-          </li>
-          <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
-          <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                                    @if(pager.CurrentPage < pager.TotalPages)
+                                    {
+                                    <li class="page-item">
+                                    <a class="page-link" aria-label="Next" asp-route-pg="@(pager.CurrentPage +1)">
+                                    <i class="bi bi-chevron-right" style="font-size:10px;"></i>
+                                    </a>
+                                    </li>
+                                    <li class="page-item">
+                                    <a class="page-link" aria-label="Last" asp-route-pg="@(pager.TotalPages)">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                    </li>
+                                    }
+                                    else
+                                    {
+                                    <li class="page-item disabled">
+                                    <a class="page-link" aria-label="Next" asp-route-pg="@(pager.CurrentPage +1)">
+                                    <i class="bi bi-chevron-right" style="font-size:10px;"></i>
+                                    </a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                    <a class="page-link" aria-label="Last" asp-route-pg="@(pager.TotalPages)">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                    </li>
+                                    }
+
+@*          <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item dots"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item dots"><a class="page-link" href="#">...</a></li>
-          <li class="page-item next-page" style="color: #F88634;">
+          <li class="page-item dots"><a class="page-link" href="#">5</a></li>*@
+@*          <li class="page-item next-page" style="color: #F88634;">
             <a class="page-link" href="#" aria-label="Previous">
               <span aria-hidden="true"> > </span>
             </a>
-          </li>
-
+          </li>*@
+         
         </ul>
+        }
         </nav>
+        @*<div>
+        <ul class="listPage">
+   
+        </ul>
+        </div>*@
       </div>
     </div>
   </div>
