@@ -4,7 +4,7 @@
     $('#countrylist').change(function (){
         var countryId = $(this).val();
         $('#citylist').empty();
-        $('#citylist').append('<option>Select city</option>');
+        $('#citylist').append('<option>Select City</option>');
         $.ajax({
             url: '/User/City?countryId=' + countryId,
             success: function (result) {
@@ -22,7 +22,7 @@
 
 
 function GetCountry() {
-    $('#countrylist').append('<option>Select city</option>');
+    $('#countrylist').append('<option>Select Country</option>');
     $.ajax({
         url:'/User/Country',
         success: function (result) {
@@ -35,11 +35,12 @@ function GetCountry() {
 
 
 function GetTheme() {
+    $('#themelist').append('<option>Select Theme</option>');
     $.ajax({
         url: '/User/Themes',
         success: function (result) {
             $.each(result, function (i, data) {
-                $('#themelist').append('<option value=' + data.missionThemeId + '>' + data.title + '</option>');
+                $('#themelist').append('<li class = "dropbtn" value=' + data.missionThemeId + '><input class="form-check-input me-2" value="data.name" type = "checkbox" id=""/>' + data.title + '</li>');
             });
         }
     });
@@ -47,11 +48,12 @@ function GetTheme() {
 
 
 function GetSkills() {
+    $('#skilllist').append('<option>Select Skill</option>');
     $.ajax({
         url: '/User/Skills',
         success: function (result) {
             $.each(result, function (i, data) {
-                $('#skilllist').append('<li class = "dropbtn"><input class="form-check-input me-2" value="data.name" type = "checkbox" id = ""/>' + data.name +'</li>');
+                $('#skilllist').append('<li class = "dropbtn" value=' + data.skillId + ' ><input class="form-check-input me-2" value="data.name" type = "checkbox" id = ""/>' + data.skillName +'</li>');
             });
         }
     });
@@ -78,7 +80,7 @@ function SearchMission()
 
     for (var i = 0; i < missionlist.length; i++)
     {
-        if ((missiontitle[i].innerHTML.toLowerCase().includes(str)) || (missionorganiser[i].innerHTML.toLowerCase().includes(str)))
+        if ((missiontitle[i].innerHTML.toLowerCase().includes(str)) || (missionorganiser[i].innerHTML.toLowerCase().includes(str)) )
         {
             missionlist[i].classList.remove("d-none");
             visibleMissions ++;
@@ -101,6 +103,28 @@ function SearchMission()
         document.getElementById("total-mission").textContent = (visibleMissions) + " mission" + (visibleMissions > 1 ? "s" : "");
     }
 }
+
+
+
+document.getElementById("selectSort").addEventListener("change", function()
+{
+        sortfunction(document.getElementById("selectSort").value);
+});
+
+
+function sortfunction(sortvalue) {
+    let url = window.location.href;
+    let separator = url.indexOf('?') != -1 ? '&' : '?';
+    if (url.includes("sortby=")) {
+        url = url.replace(/sortby=([^&]*)/, 'sortby=' + sortvalue);
+    }
+    else {
+        url += separator + 'sortby=' + sortvalue;
+    }
+
+    window.location.href = url;
+}
+
 
 
 

@@ -9,6 +9,8 @@ namespace MainProjectsEntity.ViewModel
 {
     public class MissionCard
     {
+        public long MissionId { get; set; }
+
         public string Title { get; set; } = null!;
 
         public string? ShortDescription { get; set; }
@@ -28,5 +30,9 @@ namespace MainProjectsEntity.ViewModel
         public int? Availability { get; set; }
 
         public string? GoalObjectiveText { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+
+        public virtual ICollection<FavoriteMission> FavoriteMissions { get; } = new List<FavoriteMission>();
     }
 }

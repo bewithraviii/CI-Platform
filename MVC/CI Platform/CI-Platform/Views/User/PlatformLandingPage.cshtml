@@ -49,15 +49,18 @@
   <div class="container">
     <div class="row">
       <div class="d-flex bd-highlight mb-3" style="justify-content: center; align-items: center;" >
-        <div class="me-auto p-2 bd-highlight"  style="font-family: NotoSans-Light; font-size: 24px; color: #414141;">Explore <b id="total-mission">@Model.Count() missions</b>
+        <div class="me-auto p-2 bd-highlight"  style="font-family: NotoSans-Light; font-size: 24px; color: #414141;">Explore <b id="total-mission">@pager.TotalItems missions</b>
         </div>
         <div class="options p-2 bd-highlight">
             <div class="select">
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Sort By</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+              <select class="form-select" aria-label="Default select example" id="selectSort">
+                <option value=@ViewBag.sortvalue selected>@ViewBag.sortvalue</option>
+                <option value = "Newest" >Newest</option>
+                <option value = "Oldest" >Oldest</option>
+                <option value = "Lowest available seats" >Lowest available seats</option>
+                <option value = "Highest available seats" >Highest available seats</option>
+                <option value = "My favourites" >My favourites</option>
+                <option value = "Registration deadline" >Registration deadline</option>
               </select>
             </div>
         </div>  
@@ -128,17 +131,31 @@
                                   <div>Seats left</div>
                               </div>
                               <div class="d-grid gridctnr">
+                                  @if(1 != 1)
+                                  {
+                                  <img class="pt-2 pe-3"
+                                      src="~/images/deadline.png"
+                                      alt="">
+                                  <div><div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </div>
+                                  <div>8000 Achived</div>
+                                  }
+                                  else
+                                  {
                                   <img class="pt-2 pe-3"
                                       src="~/images/deadline.png"
                                       alt="">
                                   <div>@obj.EndDate?.ToString("d")</div>
                                   <div>Deadline</div>
+                                  }
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class=" mt-3 apply">
-                      <a href="#" class="btn lgbtn
+                      <a asp-action="VolunteeringMissionPage"  asp-controller="User" asp-route-id="@obj.MissionId" class="btn lgbtn
                           ">Apply <i
                               class="bi bi-arrow-right"></i></a>
                   </div>
@@ -683,7 +700,7 @@
                                             </a>
                                         </li>
                                         <li class="page-item">
-                                            <a class="page-link" aria-label="Previous" asp-route-pg="@(pager.CurrentPage -1)">
+                                            <a class="page-link" aria-label="Previous" asp-route-pg="@(pager.CurrentPage -1)" asp-route-sortby=@ViewBag.sortvalue>
                                                 <i class="bi bi-chevron-left font-weight-bold" style="font-size:10px;"></i>
                                             </a>
                                         </li>
@@ -691,12 +708,12 @@
                                     else
                                     {
                                         <li class="page-item disabled">
-                                        <a class="page-link" aria-label="First" asp-route-pg="1">
+                                        <a class="page-link" aria-label="First" asp-route-pg="1" asp-route-sortby=@ViewBag.sortvalue>
                                         <span aria-hidden="true">&laquo;</span>
                                         </a>
                                     </li>
                                     <li class="page-item disabled">
-                                    <a class="page-link" aria-label="Previous" asp-route-pg="@(pager.CurrentPage -1)">
+                                    <a class="page-link" aria-label="Previous" asp-route-pg="@(pager.CurrentPage -1)" asp-route-sortby=@ViewBag.sortvalue>
                                     <i class="bi bi-chevron-left font-weight-bold" style="font-size:10px;"></i>
                                     </a>
                                     </li>   
@@ -706,14 +723,14 @@
                                     @for(var pge = pager.StartPage; pge <= pager.EndPage; pge++)
                                     {
                                     <li class="page-item @(pge == pager.CurrentPage ? "active" : "")">
-                                     <a class="page-link" asp-controller="User" asp-action="PlatformLandingPage" asp-route-pg="@pge" >@pge</a>
+                                     <a class="page-link" asp-controller="User" asp-action="PlatformLandingPage" asp-route-pg="@pge" asp-route-sortby=@ViewBag.sortvalue>@pge</a>
                                     </li>
                                     }
 
                                     @if(pager.CurrentPage < pager.TotalPages)
                                     {
                                     <li class="page-item">
-                                    <a class="page-link" aria-label="Next" asp-route-pg="@(pager.CurrentPage +1)">
+                                    <a class="page-link" aria-label="Next" asp-route-pg="@(pager.CurrentPage +1)" asp-route-sortby=@ViewBag.sortvalue>
                                     <i class="bi bi-chevron-right" style="font-size:10px;"></i>
                                     </a>
                                     </li>
@@ -726,12 +743,12 @@
                                     else
                                     {
                                     <li class="page-item disabled">
-                                    <a class="page-link" aria-label="Next" asp-route-pg="@(pager.CurrentPage +1)">
+                                    <a class="page-link" aria-label="Next" asp-route-pg="@(pager.CurrentPage +1)" asp-route-sortby=@ViewBag.sortvalue>
                                     <i class="bi bi-chevron-right" style="font-size:10px;"></i>
                                     </a>
                                     </li>
                                     <li class="page-item disabled">
-                                    <a class="page-link" aria-label="Last" asp-route-pg="@(pager.TotalPages)">
+                                    <a class="page-link" aria-label="Last" asp-route-pg="@(pager.TotalPages)" asp-route-sortby=@ViewBag.sortvalue>
                                     <span aria-hidden="true">&raquo;</span>
                                     </a>
                                     </li>

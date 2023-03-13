@@ -61,3 +61,11 @@ VALUES ('Anthropology', 1),
 ('Environmental Policy', 1),
 ('Farming', 1)
 ;
+
+
+
+
+
+INSERT INTO mission(theme_id, city_id, country_id, title, short_description, description, start_date, end_date, mission_type, status, organization_name, organization_detail, availability)
+VALUES
+(15, 4, 5, 'Animal Welfare and Rescue', 'Volunteers will work with animals in a shelter', 'We are looking for volunteers to help us take care of animals in our shelter. Volunteers will be responsible for tasks such as feeding the animals, cleaning their cages, and taking them for walks. No prior experience is required, but volunteers should be comfortable working with animals.', '2023-05-01', '2023-08-30', 'Time', 1, 'Animal Welfare Society', 'Animal Welfare Society is a non-profit organization that works towards the welfare and protection of animals.', 100)

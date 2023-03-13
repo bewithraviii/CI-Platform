@@ -48,7 +48,7 @@ namespace CI_Platform.Controllers
             return View();
         }
 
-        public IActionResult PlatformLandingPage(string Id, int pg=1)
+        public IActionResult PlatformLandingPage(string searchString,string sortby, string Id, int pg = 1)
         {
 
             if (HttpContext.Session.GetString("Email") == null)
@@ -62,13 +62,12 @@ namespace CI_Platform.Controllers
                 var user = _db.Users.Where(c => c.UserId == uid).FirstOrDefault();
                 if (user != null)
                 {
-                    ViewBag.FirstName = user.FirstName;
-                    ViewBag.LastName = user.LastName;
-                    ViewBag.Avatar = user.Avatar;
+                    HttpContext.Session.SetString("Fullname" ,user.FirstName + " "+user.LastName);
+                    //HttpContext.Session.SetString("Avatar", user.Avatar);
                 }
 
 
-                if(pg < 0)
+                if (pg < 0)
                 {
                     pg = pg;
                 }
@@ -76,32 +75,101 @@ namespace CI_Platform.Controllers
                 const int pageSize = 3;
                 var missions = MissionCards();
                 int recsSkip = (pg - 1) * pageSize;
-                if(!string.IsNullOrEmpty(searchString))
+                if (!string.IsNullOrEmpty(searchString))
                 {
-                    
-
+                    return View(searchString);
                 }
                 else
-                { 
+                {
 
 
 
-                int recsCount = missions.Count();
-                var pager = new Pager(recsCount, pg, pageSize);
-                var data = missions.Skip(recsSkip).Take(pager.PageSize).ToList();
-                this.ViewBag.Pager = pager;
+                    int recsCount = missions.Count();
+                    var pager = new Pager(recsCount, pg, pageSize);
+                    var data = missions.Skip(recsSkip).Take(pager.PageSize).ToList();
+                    this.ViewBag.Pager = pager;
+
+
+                    ViewBag.sortvalue = "Sort by";
+                    if (sortby != null)
+                    {
+                        ViewBag.sortvalue = sortby;
+                        if (sortby == "Newest")
+                        {
+                            var sortdata = missions.OrderByDescending(x => x.CreatedAt).ToList();
+                            int recsCount1 = sortdata.Count();
+                            var pager1 = new Pager(recsCount, pg, pageSize);
+                            var data1 = sortdata.Skip(recsSkip).Take(pager.PageSize).ToList();
+                            this.ViewBag.Pager = pager1;
+                            return View(data1);
+                        }
+                        else if (sortby == "Oldest")
+                        {
+                            var sortdata = missions.OrderBy(x => x.CreatedAt).ToList();
+                            int recsCount1 = sortdata.Count();
+                            var pager1 = new Pager(recsCount, pg, pageSize);
+                            var data1 = sortdata.Skip(recsSkip).Take(pager.PageSize).ToList();
+                            this.ViewBag.Pager = pager1;
+                            return View(data1);
+                        }
+                        else if (sortby == "Lowest available seats")
+                        {
+                            var sortdata = missions.OrderBy(x => x.Availability).ToList();
+                            int recsCount1 = sortdata.Count();
+                            var pager1 = new Pager(recsCount, pg, pageSize);
+                            var data1 = sortdata.Skip(recsSkip).Take(pager.PageSize).ToList();
+                            this.ViewBag.Pager = pager1;
+                            return View(data1);
+                        }
+                        else if (sortby == "Highest available seats")
+                        {
+                            var sortdata = missions.OrderByDescending(x => x.Availability).ToList();
+                            int recsCount1 = sortdata.Count();
+                            var pager1 = new Pager(recsCount, pg, pageSize);
+                            var data1 = sortdata.Skip(recsSkip).Take(pager.PageSize).ToList();
+                            this.ViewBag.Pager = pager1;
+                            return View(data1);
+                        }
+                        else if (sortby == "My favourites")
+                        {
+                            var sortdata = missions.FirstOrDefault(x => x.FavoriteMissions.Count > 0);
+                            return View(sortdata);
+                        }
+                        else if (sortby == "Registration deadline")
+                        {
+                            var sortdata = missions.OrderByDescending(x => x.EndDate).ToList();
+                            int recsCount1 = sortdata.Count();
+                            var pager1 = new Pager(recsCount, pg, pageSize);
+                            var data1 = sortdata.Skip(recsSkip).Take(pager.PageSize).ToList();
+                            this.ViewBag.Pager = pager1;
+                            return View(data1);
+                        }
+                    }
+
+                    return View(data);
+
+
+
+                }
+
                 
 
-                return View(data);
-                }
                 //List<MissionCard> list = MissionCards();
                 //return View(list);
+
             }
         }
 
 
+
+
+
         public List<MissionCard> MissionCards()
         {
+
+            
+
+
             using (var db = _db)
             {
                 var missions = (from a in _db.Missions
@@ -121,6 +189,8 @@ namespace CI_Platform.Controllers
                                     GoalObjectiveText = d.GoalObjectiveText,
                                     OrganizationName = a.OrganizationName,
                                     Availability = a.Availability,
+                                    CreatedAt = a.CreatedAt,
+                                    MissionId = a.MissionId
                                 }).ToList();
                 return missions;
             }
@@ -189,7 +259,7 @@ namespace CI_Platform.Controllers
 
                     var user = _db.Users.Where(c => c.Email == obj.Email).FirstOrDefault();
 
-                    _context.HttpContext.Session.SetString("Email", obj.Email);
+                    HttpContext.Session.SetString("Email", obj.Email);
                     return RedirectToAction("PlatformLandingPage", "User", new { @Id = user.UserId });
                 }
 

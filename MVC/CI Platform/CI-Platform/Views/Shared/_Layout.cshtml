@@ -1,4 +1,5 @@
-﻿
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +52,12 @@
                 <div class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #333333;">
                     <img class="userimg" src="~/images/user-img-large.png">&nbsp;   @*@ViewBag.Avatar*@
-                      <span> @ViewBag.FirstName @ViewBag.LastName</span>
+                      <span> 
+                          @if(HttpContextAccessor.HttpContext.Session.GetString("Fullname") != null)
+                                {
+                                    @HttpContextAccessor.HttpContext.Session.GetString("Fullname")
+                                }
+                            </span>
                       <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -114,9 +120,9 @@
                                 Theme
                                 <i class="bi bi-chevron-down" style="margin-left: 5px;"></i>
                               </button>
-                              <select class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="themelist">
-                                <option>Select Theme</option>
-                              </select>
+                              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="themelist">
+
+                              </ul>
                               </form>
                             </div>
                             <div class="nav-item dropdown">
